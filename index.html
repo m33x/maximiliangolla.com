@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Personal homepage of Maximilian Golla"/>
+        <meta name="keywords" content="authentication, user, password"/>
+        <meta name="author" content="Maximilian Golla">
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <title>Maximilian Golla</title>
+        <link href="css/thirdparty/bootstrap.min.css" rel="stylesheet">
+        <link href="css/custom/main.css" rel="stylesheet">
+        <link href="css/thirdparty/fontawesome.all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#home">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#program">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#program">Contact</a></li>
+              </ul>
+          </div>
+      </div><!-- end container -->
+        </nav>
+        <div class="container">
+            <h1>Maximilian Golla</h1>
+            <h5>Try again later ...</h5>
+            <hr>
+            <h2 id="home">About Me</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 order-md-first">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quam eros, rutrum sit amet dapibus ultricies, interdum nec erat. Etiam egestas augue magna, ut hendrerit mi fermentum id. Vivamus eu risus egestas, maximus arcu id, cursus magna. Fusce mattis efficitur magna, eget molestie nisi lacinia vitae. Sed at accumsan dolor. Phasellus ullamcorper odio lectus, nec imperdiet quam efficitur a. Maecenas sit amet lacus tristique, lobortis nibh id, imperdiet enim. Nulla ac neque et massa elementum faucibus.
+                    </p>
+                </div>
+                <div class="col-sm-12 order-first col-md-6">
+                    <img src="img/me.jpg" class="img-fluid rounded float-right" alt="Me">
+                </div>
+            </div>
+            <hr>
+            <!-- Just some spacing -->
+            <br>
+            <br>
+        </div><!-- end container -->
+        <script src="js/thirdparty/jquery-3.3.1.slim.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/thirdparty/jquery-slim.min.js"><\/script>')</script>
+        <script src="js/thirdparty/bootstrap.bundle.min.js"></script>
+        <!-- Make the menu items look nice -->
+        <script>
+            $(".nav-item").on("click", function(){
+                console.log("click me");
+               $(".navbar-nav").find(".active").removeClass("active");
+               $(this).addClass("active");
+            });
+        </script>
+    </body>
+</html>
