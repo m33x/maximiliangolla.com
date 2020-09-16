@@ -16,3 +16,7 @@ body > .container {
     padding-bottom: 1em;
     display: block;
 }
+
+.paper-button {
+    margin-top: 0.25em;
+}
