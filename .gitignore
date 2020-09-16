@@ -1,2 +1,5 @@
 *.psd
 *.sh
+*.py
+img/talks/raw/*
+img/projects/raw/*

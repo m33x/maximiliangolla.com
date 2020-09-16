@@ -33,7 +33,7 @@
     <body id="main">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#main"><img src="img/mg-trans.png" width="32" height="32" class="d-inline-block align-top" alt="MG Logo"></a>
+                <a class="navbar-brand" href="#main"><picture><source srcset="img/mg-trans.webp" type="image/webp"><source srcset="img/mg-trans.png" type="image/png"><img src="img/mg-trans.png" width="32" height="32" alt="MG Logo" class="d-inline-block align-top" loading="lazy"></picture></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -82,7 +82,11 @@
                     </p>
                 </div>
                 <div class="col-sm-12 order-first col-md-6">
-                    <img src="img/me-640-q85.jpg" srcset=" img/me-320-q85.jpg 320w, img/me-480-q85.jpg 480w, img/me-768-q85.jpg 768w, img/me-1024-q85.jpg 1024w, img/me-1400-q60.jpg 1280w" loading="lazy" alt="Me" class="img-fluid rounded float-right">
+                    <picture>
+                        <source srcset="img/me-320-q85.webp 320w, img/me-480-q85.webp 480w, img/me-768-q85.webp 768w, img/me-1024-q85.webp 1024w, img/me-1400-q85.webp 1280w" type="image/webp">
+                        <source srcset="img/me-320-q85.jpg 320w, img/me-480-q85.jpg 480w, img/me-768-q85.jpg 768w, img/me-1024-q85.jpg 1024w, img/me-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/me-640-q85.jpg" loading="lazy" alt="Me" class="img-fluid rounded float-right">
+                    </picture>
                 </div>
             </div>
             <hr>
@@ -487,28 +491,44 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <span class="badge badge-secondary">December 2019</span><br>
                     <a href="https://www.youtube.com/watch?v=nk7tRCy5kr8">
-                        <img src="img/talks/passwordscon_2019-640-q85.jpg" srcset=" img/talks/passwordscon_2019-320-q85.jpg 320w, img/talks/passwordscon_2019-480-q85.jpg 480w, img/talks/passwordscon_2019-768-q85.jpg 768w, img/talks/passwordscon_2019-1024-q85.jpg 1024w, img/talks/passwordscon_2019-1400-q60.jpg 1280w" loading="lazy" alt="PasswordsCon 2019: Reasoning Analytically About Password-Cracking Software" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/talks/passwordscon_2019-320-q85.webp 320w, img/talks/passwordscon_2019-480-q85.webp 480w, img/talks/passwordscon_2019-768-q85.webp 768w, img/talks/passwordscon_2019-1024-q85.webp 1024w, img/talks/passwordscon_2019-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/talks/passwordscon_2019-320-q85.jpg 320w, img/talks/passwordscon_2019-480-q85.jpg 480w, img/talks/passwordscon_2019-768-q85.jpg 768w, img/talks/passwordscon_2019-1024-q85.jpg 1024w, img/talks/passwordscon_2019-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/talks/passwordscon_2019-640-q85.jpg" loading="lazy" alt="PasswordsCon 2019: Reasoning Analytically About Password-Cracking Software" class="img-fluid img-thumbnail">
+                        </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=nk7tRCy5kr8" target="_blank" rel="noopener">PasswordsCon 2019:<br>Reasoning Analytically About Password-Cracking Software</a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <span class="badge badge-secondary">October 2018</span><br>
                     <a href="https://www.youtube.com/watch?v=YUyelgsDWZA">
-                        <img src="img/talks/acm_ccs_2018_1-640-q85.jpg" srcset=" img/talks/acm_ccs_2018_1-320-q85.jpg 320w, img/talks/acm_ccs_2018_1-480-q85.jpg 480w, img/talks/acm_ccs_2018_1-768-q85.jpg 768w, img/talks/acm_ccs_2018_1-1024-q85.jpg 1024w, img/talks/acm_ccs_2018_1-1400-q60.jpg 1280w" loading="lazy" alt="ACM CCS 2018: Designing Password-Reuse Notifications" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/talks/acm_ccs_2018_1-320-q85.webp 320w, img/talks/acm_ccs_2018_1-480-q85.webp 480w, img/talks/acm_ccs_2018_1-768-q85.webp 768w, img/talks/acm_ccs_2018_1-1024-q85.webp 1024w, img/talks/acm_ccs_2018_1-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/talks/acm_ccs_2018_1-320-q85.jpg 320w, img/talks/acm_ccs_2018_1-480-q85.jpg 480w, img/talks/acm_ccs_2018_1-768-q85.jpg 768w, img/talks/acm_ccs_2018_1-1024-q85.jpg 1024w, img/talks/acm_ccs_2018_1-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/talks/acm_ccs_2018_1-640-q85.jpg" loading="lazy" alt="ACM CCS 2018: Designing Password-Reuse Notifications" class="img-fluid img-thumbnail">
+                        </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=YUyelgsDWZA" target="_blank" rel="noopener">ACM CCS 2018:<br>Designing Password-Reuse Notifications</a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <span class="badge badge-secondary">October 2018</span><br>
                     <a href="https://www.youtube.com/watch?v=rx-_RTYSz1g">
-                        <img src="img/talks/acm_ccs_2018_2-640-q85.jpg" srcset=" img/talks/acm_ccs_2018_2-320-q85.jpg 320w, img/talks/acm_ccs_2018_2-480-q85.jpg 480w, img/talks/acm_ccs_2018_2-768-q85.jpg 768w, img/talks/acm_ccs_2018_2-1024-q85.jpg 1024w, img/talks/acm_ccs_2018_2-1400-q60.jpg 1280w" loading="lazy" alt="ACM CCS 2018: On the Accuracy of Password Strength Meters" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/talks/acm_ccs_2018_2-320-q85.webp 320w, img/talks/acm_ccs_2018_2-480-q85.webp 480w, img/talks/acm_ccs_2018_2-768-q85.webp 768w, img/talks/acm_ccs_2018_2-1024-q85.webp 1024w, img/talks/acm_ccs_2018_2-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/talks/acm_ccs_2018_2-320-q85.jpg 320w, img/talks/acm_ccs_2018_2-480-q85.jpg 480w, img/talks/acm_ccs_2018_2-768-q85.jpg 768w, img/talks/acm_ccs_2018_2-1024-q85.jpg 1024w, img/talks/acm_ccs_2018_2-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/talks/acm_ccs_2018_2-640-q85.jpg" loading="lazy" alt="ACM CCS 2018: On the Accuracy of Password Strength Meters" class="img-fluid img-thumbnail">
+                        </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=rx-_RTYSz1g" target="_blank" rel="noopener">ACM CCS 2018:<br>On the Accuracy of Password Strength Meters</a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <span class="badge badge-secondary">August 2018</span><br>
                     <a href="https://www.youtube.com/watch?v=LR3zXuZE0h0">
-                        <img src="img/talks/usenix_security_2018-640-q85.jpg" srcset=" img/talks/usenix_security_2018-320-q85.jpg 320w, img/talks/usenix_security_2018-480-q85.jpg 480w, img/talks/usenix_security_2018-768-q85.jpg 768w, img/talks/usenix_security_2018-1024-q85.jpg 1024w, img/talks/usenix_security_2018-1400-q60.jpg 1280w" loading="lazy" alt="USENIX Security 2018: Rethinking Access Control and Authentication for the Home Internet of Things" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/talks/usenix_security_2018-320-q85.webp 320w, img/talks/usenix_security_2018-480-q85.webp 480w, img/talks/usenix_security_2018-768-q85.webp 768w, img/talks/usenix_security_2018-1024-q85.webp 1024w, img/talks/usenix_security_2018-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/talks/usenix_security_2018-320-q85.jpg 320w, img/talks/usenix_security_2018-480-q85.jpg 480w, img/talks/usenix_security_2018-768-q85.jpg 768w, img/talks/usenix_security_2018-1024-q85.jpg 1024w, img/talks/usenix_security_2018-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/talks/usenix_security_2018-640-q85.jpg" loading="lazy" alt="USENIX Security 2018: Rethinking Access Control and Authentication for the Home Internet of Things" class="img-fluid img-thumbnail">
+                        </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=LR3zXuZE0h0" target="_blank" rel="noopener">USENIX Security 2018:<br>Rethinking Access Control and Authentication for the Home Internet of Things</a>
                 </div>
@@ -518,28 +538,44 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <span class="badge badge-secondary">February 2017</span><br>
                     <a href="https://www.youtube.com/watch?v=cyRRBiV1Dyc">
-                        <img src="img/talks/isoc_ndss_2017-640-q85.jpg" srcset=" img/talks/isoc_ndss_2017-320-q85.jpg 320w, img/talks/isoc_ndss_2017-480-q85.jpg 480w, img/talks/isoc_ndss_2017-768-q85.jpg 768w, img/talks/isoc_ndss_2017-1024-q85.jpg 1024w, img/talks/isoc_ndss_2017-1400-q60.jpg 1280w" loading="lazy" alt="ISOC NDSS 2017: Towards Implicit Visual Memory-Based Authentication" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/talks/isoc_ndss_2017-320-q85.webp 320w, img/talks/isoc_ndss_2017-480-q85.webp 480w, img/talks/isoc_ndss_2017-768-q85.webp 768w, img/talks/isoc_ndss_2017-1024-q85.webp 1024w, img/talks/isoc_ndss_2017-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/talks/isoc_ndss_2017-320-q85.jpg 320w, img/talks/isoc_ndss_2017-480-q85.jpg 480w, img/talks/isoc_ndss_2017-768-q85.jpg 768w, img/talks/isoc_ndss_2017-1024-q85.jpg 1024w, img/talks/isoc_ndss_2017-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/talks/isoc_ndss_2017-640-q85.jpg" loading="lazy" alt="ISOC NDSS 2017: Towards Implicit Visual Memory-Based Authentication" class="img-fluid img-thumbnail">
+                        </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=cyRRBiV1Dyc" target="_blank" rel="noopener">ISOC NDSS 2017:<br>Towards Implicit Visual Memory-Based Authentication</a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <span class="badge badge-secondary">October 2016</span><br>
                     <a href="https://www.youtube.com/watch?v=L1iVp7YAqaw">
-                        <img src="img/talks/acm_ccs_2016-640-q85.jpg" srcset=" img/talks/acm_ccs_2016-320-q85.jpg 320w, img/talks/acm_ccs_2016-480-q85.jpg 480w, img/talks/acm_ccs_2016-768-q85.jpg 768w, img/talks/acm_ccs_2016-1024-q85.jpg 1024w, img/talks/acm_ccs_2016-1400-q60.jpg 1280w" loading="lazy" alt="ACM CCS 2016: On the Security of Cracking-Resistant Password Vaults" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/talks/acm_ccs_2016-320-q85.webp 320w, img/talks/acm_ccs_2016-480-q85.webp 480w, img/talks/acm_ccs_2016-768-q85.webp 768w, img/talks/acm_ccs_2016-1024-q85.webp 1024w, img/talks/acm_ccs_2016-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/talks/acm_ccs_2016-320-q85.jpg 320w, img/talks/acm_ccs_2016-480-q85.jpg 480w, img/talks/acm_ccs_2016-768-q85.jpg 768w, img/talks/acm_ccs_2016-1024-q85.jpg 1024w, img/talks/acm_ccs_2016-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/talks/acm_ccs_2016-640-q85.jpg" loading="lazy" alt="ACM CCS 2016: On the Security of Cracking-Resistant Password Vaults" class="img-fluid img-thumbnail">
+                        </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=L1iVp7YAqaw" target="_blank" rel="noopener">ACM CCS 2016:<br>On the Security of Cracking-Resistant Password Vaults</a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <span class="badge badge-secondary">December 2015</span><br>
                     <a href="https://www.youtube.com/watch?v=TbwxvW1X-k4">
-                        <img src="img/talks/passwordscon_2015_1-640-q85.jpg" srcset=" img/talks/passwordscon_2015_1-320-q85.jpg 320w, img/talks/passwordscon_2015_1-480-q85.jpg 480w, img/talks/passwordscon_2015_1-768-q85.jpg 768w, img/talks/passwordscon_2015_1-1024-q85.jpg 1024w, img/talks/passwordscon_2015_1-1400-q60.jpg 1280w" loading="lazy" alt="PasswordsCon 2015: Analyzing 4 Million Real-World Personal Knowledge Questions" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/talks/passwordscon_2015_1-320-q85.webp 320w, img/talks/passwordscon_2015_1-480-q85.webp 480w, img/talks/passwordscon_2015_1-768-q85.webp 768w, img/talks/passwordscon_2015_1-1024-q85.webp 1024w, img/talks/passwordscon_2015_1-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/talks/passwordscon_2015_1-320-q85.jpg 320w, img/talks/passwordscon_2015_1-480-q85.jpg 480w, img/talks/passwordscon_2015_1-768-q85.jpg 768w, img/talks/passwordscon_2015_1-1024-q85.jpg 1024w, img/talks/passwordscon_2015_1-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/talks/passwordscon_2015_1-640-q85.jpg" loading="lazy" alt="PasswordsCon 2015: Analyzing 4 Million Real-World Personal Knowledge Questions" class="img-fluid img-thumbnail">
+                        </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=TbwxvW1X-k4" target="_blank" rel="noopener">PasswordsCon 2015:<br>Analyzing 4 Million Real-World Personal Knowledge Questions</a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <span class="badge badge-secondary">December 2015</span><br>
                     <a href="https://www.youtube.com/watch?v=orRNwa1Fsrs">
-                        <img src="img/talks/passwordscon_2015_2-640-q85.jpg" srcset=" img/talks/passwordscon_2015_2-320-q85.jpg 320w, img/talks/passwordscon_2015_2-480-q85.jpg 480w, img/talks/passwordscon_2015_2-768-q85.jpg 768w, img/talks/passwordscon_2015_2-1024-q85.jpg 1024w, img/talks/passwordscon_2015_2-1400-q60.jpg 1280w" loading="lazy" alt="PasswordsCon 2015: A Framework for Comparing Password Guessing Strategies" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/talks/passwordscon_2015_2-320-q85.webp 320w, img/talks/passwordscon_2015_2-480-q85.webp 480w, img/talks/passwordscon_2015_2-768-q85.webp 768w, img/talks/passwordscon_2015_2-1024-q85.webp 1024w, img/talks/passwordscon_2015_2-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/talks/passwordscon_2015_2-320-q85.jpg 320w, img/talks/passwordscon_2015_2-480-q85.jpg 480w, img/talks/passwordscon_2015_2-768-q85.jpg 768w, img/talks/passwordscon_2015_2-1024-q85.jpg 1024w, img/talks/passwordscon_2015_2-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/talks/passwordscon_2015_2-640-q85.jpg" loading="lazy" alt="PasswordsCon 2015: A Framework for Comparing Password Guessing Strategies" class="img-fluid img-thumbnail">
+                        </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=orRNwa1Fsrs" target="_blank" rel="noopener">PasswordsCon 2015:<br>A Framework for Comparing Password Guessing Strategies</a>
                 </div>
@@ -598,21 +634,33 @@
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">June 2020</span><br>
                     <a href="https://unacceptable-privacy.github.io" target="_blank" rel="noopener">
-                        <img src="img/projects/2020-unacceptable-privacy-640-q85.jpg" srcset=" img/projects/2020-unacceptable-privacy-320-q85.jpg 320w, img/projects/2020-unacceptable-privacy-480-q85.jpg 480w, img/projects/2020-unacceptable-privacy-768-q85.jpg 768w, img/projects/2020-unacceptable-privacy-1024-q85.jpg 1024w, img/projects/2020-unacceptable-privacy-1400-q60.jpg 1280w" loading="lazy" alt="Unacceptable-Privacy: Exploring Accidental Triggers of Smart Speakers" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2020-unacceptable-privacy-320-q85.webp 320w, img/projects/2020-unacceptable-privacy-480-q85.webp 480w, img/projects/2020-unacceptable-privacy-768-q85.webp 768w, img/projects/2020-unacceptable-privacy-1024-q85.webp 1024w, img/projects/2020-unacceptable-privacy-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2020-unacceptable-privacy-320-q85.jpg 320w, img/projects/2020-unacceptable-privacy-480-q85.jpg 480w, img/projects/2020-unacceptable-privacy-768-q85.jpg 768w, img/projects/2020-unacceptable-privacy-1024-q85.jpg 1024w, img/projects/2020-unacceptable-privacy-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2020-unacceptable-privacy-640-q85.jpg" loading="lazy" alt="Unacceptable-Privacy: Exploring Accidental Triggers of Smart Speakers" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://unacceptable-privacy.github.io" target="_blank" rel="noopener">Unacceptable-Privacy:<br>Exploring Accidental Triggers of Smart Speakers</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">June 2020</span><br>
                     <a href="https://covid-lens.github.io" target="_blank" rel="noopener">
-                        <img src="img/projects/2020-covid-lens-640-q85.jpg" srcset=" img/projects/2020-covid-lens-320-q85.jpg 320w, img/projects/2020-covid-lens-480-q85.jpg 480w, img/projects/2020-covid-lens-768-q85.jpg 768w, img/projects/2020-covid-lens-1024-q85.jpg 1024w, img/projects/2020-covid-lens-1400-q60.jpg 1280w" loading="lazy" alt="COVID-LENS: List COVID-19 Exposure Notification Services" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2020-covid-lens-320-q85.webp 320w, img/projects/2020-covid-lens-480-q85.webp 480w, img/projects/2020-covid-lens-768-q85.webp 768w, img/projects/2020-covid-lens-1024-q85.webp 1024w, img/projects/2020-covid-lens-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2020-covid-lens-320-q85.jpg 320w, img/projects/2020-covid-lens-480-q85.jpg 480w, img/projects/2020-covid-lens-768-q85.jpg 768w, img/projects/2020-covid-lens-1024-q85.jpg 1024w, img/projects/2020-covid-lens-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2020-covid-lens-640-q85.jpg" loading="lazy" alt="COVID-LENS: List COVID-19 Exposure Notification Services" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://covid-lens.github.io" target="_blank" rel="noopener">COVID-LENS:<br>List COVID-19 Exposure Notification Services</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">May 2020</span><br>
                     <a href="https://this-pin-can-be-easily-guessed.github.io" target="_blank" rel="noopener">
-                        <img src="img/projects/2020-pin-blocklists-640-q85.jpg" srcset=" img/projects/2020-pin-blocklists-320-q85.jpg 320w, img/projects/2020-pin-blocklists-480-q85.jpg 480w, img/projects/2020-pin-blocklists-768-q85.jpg 768w, img/projects/2020-pin-blocklists-1024-q85.jpg 1024w, img/projects/2020-pin-blocklists-1400-q60.jpg 1280w" loading="lazy" alt="PIN Blocklists: This PIN Can Be Easily Guessed" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2020-pin-blocklists-320-q85.webp 320w, img/projects/2020-pin-blocklists-480-q85.webp 480w, img/projects/2020-pin-blocklists-768-q85.webp 768w, img/projects/2020-pin-blocklists-1024-q85.webp 1024w, img/projects/2020-pin-blocklists-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2020-pin-blocklists-320-q85.jpg 320w, img/projects/2020-pin-blocklists-480-q85.jpg 480w, img/projects/2020-pin-blocklists-768-q85.jpg 768w, img/projects/2020-pin-blocklists-1024-q85.jpg 1024w, img/projects/2020-pin-blocklists-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2020-pin-blocklists-640-q85.jpg" loading="lazy" alt="PIN Blocklists: This PIN Can Be Easily Guessed" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://this-pin-can-be-easily-guessed.github.io" target="_blank" rel="noopener">PIN Blocklists:<br>This PIN Can Be Easily Guessed</a>
                 </div>
@@ -626,21 +674,33 @@
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">July 2019</span><br>
                     <a href="https://github.com/RUB-SysSec/APC" target="_blank" rel="noopener">
-                        <img src="img/projects/2019-apc-640-q85.jpg" srcset=" img/projects/2019-apc-320-q85.jpg 320w, img/projects/2019-apc-480-q85.jpg 480w, img/projects/2019-apc-768-q85.jpg 768w, img/projects/2019-apc-1024-q85.jpg 1024w, img/projects/2019-apc-1400-q60.jpg 1280w" loading="lazy" alt="Android (Unlock) Pattern Classifier: Unlock Pattern Strength Meter" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2019-apc-320-q85.webp 320w, img/projects/2019-apc-480-q85.webp 480w, img/projects/2019-apc-768-q85.webp 768w, img/projects/2019-apc-1024-q85.webp 1024w, img/projects/2019-apc-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2019-apc-320-q85.jpg 320w, img/projects/2019-apc-480-q85.jpg 480w, img/projects/2019-apc-768-q85.jpg 768w, img/projects/2019-apc-1024-q85.jpg 1024w, img/projects/2019-apc-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2019-apc-640-q85.jpg" loading="lazy" alt="Android (Unlock) Pattern Classifier: Unlock Pattern Strength Meter" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://github.com/RUB-SysSec/APC" target="_blank" rel="noopener">Android (Unlock) Pattern Classifier:<br>Unlock Pattern Strength Meter</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">July 2019</span><br>
                     <a href="https://github.com/RUB-SysSec/NEMO" target="_blank" rel="noopener">
-                        <img src="img/projects/2019-nemo-640-q85.jpg" srcset=" img/projects/2019-nemo-320-q85.jpg 320w, img/projects/2019-nemo-480-q85.jpg 480w, img/projects/2019-nemo-768-q85.jpg 768w, img/projects/2019-nemo-1024-q85.jpg 1024w, img/projects/2019-nemo-1400-q60.jpg 1280w" loading="lazy" alt="NEMO: Modeling Guessability Using Markov Models" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2019-nemo-320-q85.webp 320w, img/projects/2019-nemo-480-q85.webp 480w, img/projects/2019-nemo-768-q85.webp 768w, img/projects/2019-nemo-1024-q85.webp 1024w, img/projects/2019-nemo-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2019-nemo-320-q85.jpg 320w, img/projects/2019-nemo-480-q85.jpg 480w, img/projects/2019-nemo-768-q85.jpg 768w, img/projects/2019-nemo-1024-q85.jpg 1024w, img/projects/2019-nemo-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2019-nemo-640-q85.jpg" loading="lazy" alt="NEMO: Modeling Guessability Using Markov Models" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://github.com/RUB-SysSec/NEMO" target="_blank" rel="noopener">NEMO:<br>Modeling Guessability Using Markov Models</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">June 2019</span><br>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/view-email-get-hacked-attacking-sms-based-two-fact/" target="_blank" rel="noopener">
-                        <img src="img/projects/2019-g2f-640-q85.jpg" srcset=" img/projects/2019-g2f-320-q85.jpg 320w, img/projects/2019-g2f-480-q85.jpg 480w, img/projects/2019-g2f-768-q85.jpg 768w, img/projects/2019-g2f-1024-q85.jpg 1024w, img/projects/2019-g2f-1400-q60.jpg 1280w" loading="lazy" alt="2FA Phishing: SMS Verification in Gmail's Confidential Mode" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2019-g2f-320-q85.webp 320w, img/projects/2019-g2f-480-q85.webp 480w, img/projects/2019-g2f-768-q85.webp 768w, img/projects/2019-g2f-1024-q85.webp 1024w, img/projects/2019-g2f-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2019-g2f-320-q85.jpg 320w, img/projects/2019-g2f-480-q85.jpg 480w, img/projects/2019-g2f-768-q85.jpg 768w, img/projects/2019-g2f-1024-q85.jpg 1024w, img/projects/2019-g2f-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2019-g2f-640-q85.jpg" loading="lazy" alt="2FA Phishing: SMS Verification in Gmail's Confidential Mode" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/view-email-get-hacked-attacking-sms-based-two-fact/" target="_blank" rel="noopener">2FA Phishing:<br>SMS Verification in Gmail's Confidential Mode</a>
                 </div>
@@ -654,21 +714,33 @@
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">December 2018</span><br>
                     <a href="https://github.com/UChicagoSUPERgroup/analytic-password-cracking" target="_blank" rel="noopener">
-                        <img src="img/projects/2018-analytic-pw-cracking-640-q85.jpg" srcset=" img/projects/2018-analytic-pw-cracking-320-q85.jpg 320w, img/projects/2018-analytic-pw-cracking-480-q85.jpg 480w, img/projects/2018-analytic-pw-cracking-768-q85.jpg 768w, img/projects/2018-analytic-pw-cracking-1024-q85.jpg 1024w, img/projects/2018-analytic-pw-cracking-1400-q60.jpg 1280w" loading="lazy" alt="Analytic Password Cracking: Reasoning About Password-Cracking Software" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2018-analytic-pw-cracking-320-q85.webp 320w, img/projects/2018-analytic-pw-cracking-480-q85.webp 480w, img/projects/2018-analytic-pw-cracking-768-q85.webp 768w, img/projects/2018-analytic-pw-cracking-1024-q85.webp 1024w, img/projects/2018-analytic-pw-cracking-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2018-analytic-pw-cracking-320-q85.jpg 320w, img/projects/2018-analytic-pw-cracking-480-q85.jpg 480w, img/projects/2018-analytic-pw-cracking-768-q85.jpg 768w, img/projects/2018-analytic-pw-cracking-1024-q85.jpg 1024w, img/projects/2018-analytic-pw-cracking-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2018-analytic-pw-cracking-640-q85.jpg" loading="lazy" alt="Analytic Password Cracking: Reasoning About Password-Cracking Software" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://github.com/UChicagoSUPERgroup/analytic-password-cracking" target="_blank" rel="noopener">Analytic Password Cracking:<br>Reasoning About Password-Cracking Software</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">October 2018</span><br>
                     <a href="https://password-meter-comparison.org" target="_blank" rel="noopener">
-                        <img src="img/projects/2018-meter-640-q85.jpg" srcset=" img/projects/2018-meter-320-q85.jpg 320w, img/projects/2018-meter-480-q85.jpg 480w, img/projects/2018-meter-768-q85.jpg 768w, img/projects/2018-meter-1024-q85.jpg 1024w, img/projects/2018-meter-1400-q60.jpg 1280w" loading="lazy" alt="Password Strength Meters: Meter Comparison Made Simple" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2018-meter-320-q85.webp 320w, img/projects/2018-meter-480-q85.webp 480w, img/projects/2018-meter-768-q85.webp 768w, img/projects/2018-meter-1024-q85.webp 1024w, img/projects/2018-meter-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2018-meter-320-q85.jpg 320w, img/projects/2018-meter-480-q85.jpg 480w, img/projects/2018-meter-768-q85.jpg 768w, img/projects/2018-meter-1024-q85.jpg 1024w, img/projects/2018-meter-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2018-meter-640-q85.jpg" loading="lazy" alt="Password Strength Meters: Meter Comparison Made Simple" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://password-meter-comparison.org" target="_blank" rel="noopener">Password Strength Meters:<br>Meter Comparison Made Simple</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">January 2018</span><br>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/work-progress-comparative-long-term-study-fallback/" target="_blank" rel="noopener">
-                        <img src="img/projects/2018-fallback-640-q85.jpg" srcset=" img/projects/2018-fallback-320-q85.jpg 320w, img/projects/2018-fallback-480-q85.jpg 480w, img/projects/2018-fallback-768-q85.jpg 768w, img/projects/2018-fallback-1024-q85.jpg 1024w, img/projects/2018-fallback-1400-q60.jpg 1280w" loading="lazy" alt="Comparing Fallback Schemes: Usability Study of Fallback Authentication" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2018-fallback-320-q85.webp 320w, img/projects/2018-fallback-480-q85.webp 480w, img/projects/2018-fallback-768-q85.webp 768w, img/projects/2018-fallback-1024-q85.webp 1024w, img/projects/2018-fallback-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2018-fallback-320-q85.jpg 320w, img/projects/2018-fallback-480-q85.jpg 480w, img/projects/2018-fallback-768-q85.jpg 768w, img/projects/2018-fallback-1024-q85.jpg 1024w, img/projects/2018-fallback-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2018-fallback-640-q85.jpg" loading="lazy" alt="Comparing Fallback Schemes: Usability Study of Fallback Authentication" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/work-progress-comparative-long-term-study-fallback/" target="_blank" rel="noopener">Comparing Fallback Schemes:<br>Usability Study of Fallback Authentication</a>
                 </div>
@@ -682,19 +754,31 @@
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">December 2017</span><br>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/impact-of-password-strength-visualizations/" target="_blank" rel="noopener">
-                        <img src="img/projects/2017-gamification-640-q85.jpg" srcset=" img/projects/2017-gamification-320-q85.jpg 320w, img/projects/2017-gamification-480-q85.jpg 480w, img/projects/2017-gamification-768-q85.jpg 768w, img/projects/2017-gamification-1024-q85.jpg 1024w, img/projects/2017-gamification-1400-q60.jpg 1280w" loading="lazy" alt="Bars, Badges, and High Scores: Impact of Password Strength Visualizations" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2017-gamification-320-q85.webp 320w, img/projects/2017-gamification-480-q85.webp 480w, img/projects/2017-gamification-768-q85.webp 768w, img/projects/2017-gamification-1024-q85.webp 1024w, img/projects/2017-gamification-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2017-gamification-320-q85.jpg 320w, img/projects/2017-gamification-480-q85.jpg 480w, img/projects/2017-gamification-768-q85.jpg 768w, img/projects/2017-gamification-1024-q85.jpg 1024w, img/projects/2017-gamification-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2017-gamification-640-q85.jpg" loading="lazy" alt="Bars, Badges, and High Scores: Impact of Password Strength Visualizations" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/impact-of-password-strength-visualizations/" target="_blank" rel="noopener">Bars, Badges, and High Scores:<br>Impact of Password Strength Visualizations</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">May 2017</span><br>
-                    <img src="img/projects/2017-vr-640-q85.jpg" srcset=" img/projects/2017-vr-320-q85.jpg 320w, img/projects/2017-vr-480-q85.jpg 480w, img/projects/2017-vr-768-q85.jpg 768w, img/projects/2017-vr-1024-q85.jpg 1024w, img/projects/2017-vr-1400-q60.jpg 1280w" loading="lazy" alt="Authentication in Virtual Reality: Predictive Keyboard for Entering Passwords" class="img-fluid img-thumbnail">
+                    <picture>
+                        <source srcset="img/projects/2017-vr-320-q85.webp 320w, img/projects/2017-vr-480-q85.webp 480w, img/projects/2017-vr-768-q85.webp 768w, img/projects/2017-vr-1024-q85.webp 1024w, img/projects/2017-vr-1400-q85.webp 1280w" type="image/webp">
+                        <source srcset="img/projects/2017-vr-320-q85.jpg 320w, img/projects/2017-vr-480-q85.jpg 480w, img/projects/2017-vr-768-q85.jpg 768w, img/projects/2017-vr-1024-q85.jpg 1024w, img/projects/2017-vr-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/projects/2017-vr-640-q85.jpg" loading="lazy" alt="Authentication in Virtual Reality: Predictive Keyboard for Entering Passwords" class="img-fluid img-thumbnail">
+                    </picture>
                     <span class="text-primary">Authentication in Virtual Reality:<br>Predictive Keyboard for Entering Passwords</span>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">February 2017</span><br>
                     <a href="https://mooneyauth.org" target="_blank" rel="noopener">
-                        <img src="img/projects/2017-mooneyauth-640-q85.jpg" srcset=" img/projects/2017-mooneyauth-320-q85.jpg 320w, img/projects/2017-mooneyauth-480-q85.jpg 480w, img/projects/2017-mooneyauth-768-q85.jpg 768w, img/projects/2017-mooneyauth-1024-q85.jpg 1024w, img/projects/2017-mooneyauth-1400-q60.jpg 1280w" loading="lazy" alt="MooneyAuth: Implicit (Fallback) Authentication" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2017-mooneyauth-320-q85.webp 320w, img/projects/2017-mooneyauth-480-q85.webp 480w, img/projects/2017-mooneyauth-768-q85.webp 768w, img/projects/2017-mooneyauth-1024-q85.webp 1024w, img/projects/2017-mooneyauth-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2017-mooneyauth-320-q85.jpg 320w, img/projects/2017-mooneyauth-480-q85.jpg 480w, img/projects/2017-mooneyauth-768-q85.jpg 768w, img/projects/2017-mooneyauth-1024-q85.jpg 1024w, img/projects/2017-mooneyauth-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2017-mooneyauth-640-q85.jpg" loading="lazy" alt="MooneyAuth: Implicit (Fallback) Authentication" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://mooneyauth.org" target="_blank" rel="noopener">MooneyAuth:<br>Implicit (Fallback) Authentication</a>
                 </div>
@@ -708,21 +792,33 @@
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">October 2016</span><br>
                     <a href="https://github.com/RUB-SysSec/NEMO" target="_blank" rel="noopener">
-                        <img src="img/projects/2016-nocrack-640-q85.jpg" srcset=" img/projects/2016-nocrack-320-q85.jpg 320w, img/projects/2016-nocrack-480-q85.jpg 480w, img/projects/2016-nocrack-768-q85.jpg 768w, img/projects/2016-nocrack-1024-q85.jpg 1024w, img/projects/2016-nocrack-1400-q60.jpg 1280w" loading="lazy" alt="Cracking NoCrack: Security of Cracking-Resistant Vaults" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2016-nocrack-320-q85.webp 320w, img/projects/2016-nocrack-480-q85.webp 480w, img/projects/2016-nocrack-768-q85.webp 768w, img/projects/2016-nocrack-1024-q85.webp 1024w, img/projects/2016-nocrack-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2016-nocrack-320-q85.jpg 320w, img/projects/2016-nocrack-480-q85.jpg 480w, img/projects/2016-nocrack-768-q85.jpg 768w, img/projects/2016-nocrack-1024-q85.jpg 1024w, img/projects/2016-nocrack-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2016-nocrack-640-q85.jpg" loading="lazy" alt="Cracking NoCrack: Security of Cracking-Resistant Vaults" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://github.com/RUB-SysSec/NEMO" target="_blank" rel="noopener">Cracking NoCrack:<br>Security of Cracking-Resistant Vaults</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">August 2016</span><br>
                     <a href="https://github.com/RUB-SysSec/OMEN" target="_blank" rel="noopener">
-                        <img src="img/projects/2016-omen-640-q85.jpg" srcset=" img/projects/2016-omen-320-q85.jpg 320w, img/projects/2016-omen-480-q85.jpg 480w, img/projects/2016-omen-768-q85.jpg 768w, img/projects/2016-omen-1024-q85.jpg 1024w, img/projects/2016-omen-1400-q60.jpg 1280w" loading="lazy" alt="Ordered Markov ENumerator" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2016-omen-320-q85.webp 320w, img/projects/2016-omen-480-q85.webp 480w, img/projects/2016-omen-768-q85.webp 768w, img/projects/2016-omen-1024-q85.webp 1024w, img/projects/2016-omen-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2016-omen-320-q85.jpg 320w, img/projects/2016-omen-480-q85.jpg 480w, img/projects/2016-omen-768-q85.jpg 768w, img/projects/2016-omen-1024-q85.jpg 1024w, img/projects/2016-omen-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2016-omen-640-q85.jpg" loading="lazy" alt="Ordered Markov ENumerator" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://github.com/RUB-SysSec/OMEN" target="_blank" rel="noopener">OMEN:<br>Ordered Markov ENumerator</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">March 2016</span><br>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/quantifying-security-emoji-based-authentication/" target="_blank" rel="noopener">
-                        <img src="img/projects/2016-pictopass-640-q85.jpg" srcset=" img/projects/2016-pictopass-320-q85.jpg 320w, img/projects/2016-pictopass-480-q85.jpg 480w, img/projects/2016-pictopass-768-q85.jpg 768w, img/projects/2016-pictopass-1024-q85.jpg 1024w, img/projects/2016-pictopass-1400-q60.jpg 1280w" loading="lazy" alt="EmojiAuth: Emoji-based Mobile Authentication" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2016-pictopass-320-q85.webp 320w, img/projects/2016-pictopass-480-q85.webp 480w, img/projects/2016-pictopass-768-q85.webp 768w, img/projects/2016-pictopass-1024-q85.webp 1024w, img/projects/2016-pictopass-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2016-pictopass-320-q85.jpg 320w, img/projects/2016-pictopass-480-q85.jpg 480w, img/projects/2016-pictopass-768-q85.jpg 768w, img/projects/2016-pictopass-1024-q85.jpg 1024w, img/projects/2016-pictopass-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2016-pictopass-640-q85.jpg" loading="lazy" alt="EmojiAuth: Emoji-based Mobile Authentication" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/quantifying-security-emoji-based-authentication/" target="_blank" rel="noopener">EmojiAuth:<br>Emoji-based Mobile Authentication</a>
                 </div>
@@ -736,18 +832,30 @@
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">December 2015</span><br>
                     <a href="https://www.password-guessing.org" target="_blank" rel="noopener">
-                        <img src="img/projects/2015-pgf-640-q85.jpg" srcset=" img/projects/2015-pgf-320-q85.jpg 320w, img/projects/2015-pgf-480-q85.jpg 480w, img/projects/2015-pgf-768-q85.jpg 768w, img/projects/2015-pgf-1024-q85.jpg 1024w, img/projects/2015-pgf-1400-q60.jpg 1280w" loading="lazy" alt="Comparing Guessing Strategies: Framework for Comparing Password Guesser" class="img-fluid img-thumbnail">
+                        <picture>
+                            <source srcset="img/projects/2015-pgf-320-q85.webp 320w, img/projects/2015-pgf-480-q85.webp 480w, img/projects/2015-pgf-768-q85.webp 768w, img/projects/2015-pgf-1024-q85.webp 1024w, img/projects/2015-pgf-1400-q85.webp 1280w" type="image/webp">
+                            <source srcset="img/projects/2015-pgf-320-q85.jpg 320w, img/projects/2015-pgf-480-q85.jpg 480w, img/projects/2015-pgf-768-q85.jpg 768w, img/projects/2015-pgf-1024-q85.jpg 1024w, img/projects/2015-pgf-1400-q85.jpg 1280w" type="image/jpeg">
+                            <img src="img/projects/2015-pgf-640-q85.jpg" loading="lazy" alt="Comparing Guessing Strategies: Framework for Comparing Password Guesser" class="img-fluid img-thumbnail">
+                        </picture>
                     </a>
                     <a href="https://www.password-guessing.org" target="_blank" rel="noopener">Comparing Guessing Strategies:<br>Framework for Comparing Password Guesser</a>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">October 2015</span><br>
-                    <img src="img/projects/2015-crawler-640-q85.jpg" srcset=" img/projects/2015-crawler-320-q85.jpg 320w, img/projects/2015-crawler-480-q85.jpg 480w, img/projects/2015-crawler-768-q85.jpg 768w, img/projects/2015-crawler-1024-q85.jpg 1024w, img/projects/2015-crawler-1400-q60.jpg 1280w" loading="lazy" alt="Gathering User Information: PII-Based Password Guessing" class="img-fluid img-thumbnail">
+                    <picture>
+                        <source srcset="img/projects/2015-crawler-320-q85.webp 320w, img/projects/2015-crawler-480-q85.webp 480w, img/projects/2015-crawler-768-q85.webp 768w, img/projects/2015-crawler-1024-q85.webp 1024w, img/projects/2015-crawler-1400-q85.webp 1280w" type="image/webp">
+                        <source srcset="img/projects/2015-crawler-320-q85.jpg 320w, img/projects/2015-crawler-480-q85.jpg 480w, img/projects/2015-crawler-768-q85.jpg 768w, img/projects/2015-crawler-1024-q85.jpg 1024w, img/projects/2015-crawler-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/projects/2015-crawler-640-q85.jpg" loading="lazy" alt="Gathering User Information: PII-Based Password Guessing" class="img-fluid img-thumbnail">
+                    </picture>
                     <span class="text-primary">Gathering User Information:<br>PII-Based Password Guessing</span>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">July 2015</span><br>
-                    <img src="img/projects/2015-rythm-640-q85.jpg" srcset=" img/projects/2015-rythm-320-q85.jpg 320w, img/projects/2015-rythm-480-q85.jpg 480w, img/projects/2015-rythm-768-q85.jpg 768w, img/projects/2015-rythm-1024-q85.jpg 1024w, img/projects/2015-rythm-1400-q60.jpg 1280w" loading="lazy" alt="Learning Authentication Secrets: Knock Patterns" class="img-fluid img-thumbnail">
+                    <picture>
+                        <source srcset="img/projects/2015-rythm-320-q85.webp 320w, img/projects/2015-rythm-480-q85.webp 480w, img/projects/2015-rythm-768-q85.webp 768w, img/projects/2015-rythm-1024-q85.webp 1024w, img/projects/2015-rythm-1400-q85.webp 1280w" type="image/webp">
+                        <source srcset="img/projects/2015-rythm-320-q85.jpg 320w, img/projects/2015-rythm-480-q85.jpg 480w, img/projects/2015-rythm-768-q85.jpg 768w, img/projects/2015-rythm-1024-q85.jpg 1024w, img/projects/2015-rythm-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/projects/2015-rythm-640-q85.jpg" loading="lazy" alt="Learning Authentication Secrets: Knock Patterns" class="img-fluid img-thumbnail">
+                    </picture>
                     <span class="text-primary">Learning Authentication Secrets:<br>Knock Patterns</span>
                 </div>
             </div>
@@ -759,12 +867,20 @@
             <div class="row text-center">
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">December 2014</span><br>
-                    <img src="img/projects/2014-icloud-640-q85.jpg" srcset=" img/projects/2014-icloud-320-q85.jpg 320w, img/projects/2014-icloud-480-q85.jpg 480w, img/projects/2014-icloud-768-q85.jpg 768w, img/projects/2014-icloud-1024-q85.jpg 1024w, img/projects/2014-icloud-1400-q60.jpg 1280w" loading="lazy" alt="Attacking Audio CAPTCHAs: Breaking Apple's iCloud Audio CAPTCHA" class="img-fluid img-thumbnail">
+                    <picture>
+                        <source srcset="img/projects/2014-icloud-320-q85.webp 320w, img/projects/2014-icloud-480-q85.webp 480w, img/projects/2014-icloud-768-q85.webp 768w, img/projects/2014-icloud-1024-q85.webp 1024w, img/projects/2014-icloud-1400-q85.webp 1280w" type="image/webp">
+                        <source srcset="img/projects/2014-icloud-320-q85.jpg 320w, img/projects/2014-icloud-480-q85.jpg 480w, img/projects/2014-icloud-768-q85.jpg 768w, img/projects/2014-icloud-1024-q85.jpg 1024w, img/projects/2014-icloud-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/projects/2014-icloud-640-q85.jpg" loading="lazy" alt="Attacking Audio CAPTCHAs: Breaking Apple's iCloud Audio CAPTCHA" class="img-fluid img-thumbnail">
+                    </picture>
                     <span class="text-primary">Attacking Audio CAPTCHAs:<br>Breaking Apple's iCloud Audio CAPTCHA</span>
                 </div>
                 <div class="col-12 col-sm-4">
                     <span class="badge badge-secondary">July 2014</span><br>
-                    <img src="img/projects/2014-gfa-640-q85.jpg" srcset=" img/projects/2014-gfa-320-q85.jpg 320w, img/projects/2014-gfa-480-q85.jpg 480w, img/projects/2014-gfa-768-q85.jpg 768w, img/projects/2014-gfa-1024-q85.jpg 1024w, img/projects/2014-gfa-1400-q60.jpg 1280w" loading="lazy" alt="Graphical Fallback Authentication: Google Street View-Based Authentication" class="img-fluid img-thumbnail">
+                    <picture>
+                        <source srcset="img/projects/2014-gfa-320-q85.webp 320w, img/projects/2014-gfa-480-q85.webp 480w, img/projects/2014-gfa-768-q85.webp 768w, img/projects/2014-gfa-1024-q85.webp 1024w, img/projects/2014-gfa-1400-q85.webp 1280w" type="image/webp">
+                        <source srcset="img/projects/2014-gfa-320-q85.jpg 320w, img/projects/2014-gfa-480-q85.jpg 480w, img/projects/2014-gfa-768-q85.jpg 768w, img/projects/2014-gfa-1024-q85.jpg 1024w, img/projects/2014-gfa-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/projects/2014-gfa-640-q85.jpg" loading="lazy" alt="Graphical Fallback Authentication: Google Street View-Based Authentication" class="img-fluid img-thumbnail">
+                    </picture>
                     <span class="text-primary">Graphical Fallback Authentication:<br>Google Street View-Based Authentication</span>
                 </div>
             </div>
