@@ -20,3 +20,16 @@ body > .container {
 .paper-button {
     margin-top: 0.25em;
 }
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.025);
+}
+
+.headline {
+    text-transform: uppercase;
+    color: #343a40;
+}

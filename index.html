@@ -39,13 +39,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav mr-auto smooth-scroll">
-                        <li class="nav-item active"><a class="nav-link text-primary" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">About Me <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a class="nav-link text-primary" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link text-primary" href="#publications" data-toggle="collapse" data-target=".navbar-collapse.show">Publications</a></li>
-                        <li class="nav-item"><a class="nav-link text-primary" href="#service" data-toggle="collapse" data-target=".navbar-collapse.show">Service</a></li>
-                        <li class="nav-item"><a class="nav-link text-primary" href="#talks" data-toggle="collapse" data-target=".navbar-collapse.show">Talks</a></li>
-                        <li class="nav-item"><a class="nav-link text-primary" href="#press" data-toggle="collapse" data-target=".navbar-collapse.show">Press</a></li>
-                        <li class="nav-item"><a class="nav-link text-primary" href="#projects" data-toggle="collapse" data-target=".navbar-collapse.show">Projects</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">About Me <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#publications" data-toggle="collapse" data-target=".navbar-collapse.show">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service" data-toggle="collapse" data-target=".navbar-collapse.show">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#talks" data-toggle="collapse" data-target=".navbar-collapse.show">Talks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#press" data-toggle="collapse" data-target=".navbar-collapse.show">Press</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects" data-toggle="collapse" data-target=".navbar-collapse.show">Projects</a></li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link text-muted" role="button" href="./legal.html">Legal Notice</a></li>
@@ -57,12 +57,12 @@
         <div class="container">
             <div class="row">
                 <div id="about" class="col-12">
-                    <h1>Maximilian Golla</h1>
+                    <h1 style="color: #343a40;">Maximilian Golla</h1>
                     <h5>Postdoc at the <a href="https://csp.mpg.de" target="_blank" rel="noopener">Max Planck Institute for Security and Privacy</a> in Bochum, Germany</h5>
                     <hr>
                 </div>
             </div>
-            <h2 class="font-italic">Hi there ...</h2>
+            <h2 class="font-italic" style="color: #343a40;">Hi there!</h2>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-0">&nbsp;</div>
                 <div class="col-sm-12 col-md-12 col-lg-6 order-lg-first">
@@ -85,14 +85,14 @@
                     <picture>
                         <source sizes="768vw" srcset="img/me-320-q85.webp 320w, img/me-480-q85.webp 480w, img/me-768-q85.webp 768w, img/me-1024-q85.webp 1024w, img/me-1400-q85.webp 1280w" type="image/webp">
                         <source sizes="768vw" srcset="img/me-320-q85.jpg 320w, img/me-480-q85.jpg 480w, img/me-768-q85.jpg 768w, img/me-1024-q85.jpg 1024w, img/me-1400-q85.jpg 1280w" type="image/jpeg">
-                        <img src="img/me-640-q85.jpg" loading="lazy" alt="Me" class="img-fluid rounded float-right">
+                        <img src="img/me-640-q85.jpg" loading="lazy" alt="Me" class="img-fluid rounded float-right zoom">
                     </picture>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <h2><i class="fas fa-fire-alt"></i> Interests</h2>
+                    <h2 class="headline"><i class="fas fa-fire-alt"></i> Interests</h2>
                         <ul>
                             <li><b>User Authentication</b>
                                 <ul>
@@ -113,7 +113,7 @@
                         </ul>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <h2><i class="fas fa-university"></i> Education</h2>
+                    <h2 class="headline"><i class="fas fa-university"></i> Education</h2>
                     <ul>
                         <li><b>Doctorate (Dr.-Ing.)</b> &mdash; <i class="fas fa-award"></i> <em>Summa cum laude (With highest honors)</em>
                             <ul>
@@ -140,17 +140,21 @@
                 </div>
             </div>
             <hr>
-            <h2 id="contact"><i class="fas fa-envelope"></i> Contact</h2>
+            <h2 id="contact" class="headline"><i class="fas fa-envelope"></i> Contact</h2>
             <hr>
-            <p>
-            You can contact me via email: <a href="mailto:maximilian.golla@rub.de" target="_blank" rel="noopener">maximilian.golla@rub.de</a>
-            </p>
-            <a class="btn btn-sm btn-success" href="files/2020/pgp/Maximilian_Golla_0F00C809.asc" target="_blank" rel="noopener"><i class="fas fa-key"></i> <span class="network-name">PGP</span></a>
-            <a class="btn btn-sm" href="https://twitter.com/m33x" target="_blank" rel="noopener" style="color:#fff;background-color:#1da1f2;"><i class="fab fa-twitter"></i> <span class="network-name">Twitter</span></a>
+            <address>
+                <strong>Maximilian Golla</strong><br>
+                Max Planck Institute for Security and Privacy<br>
+                Office: Ruhr University Bochum, ID 2/129<br>
+                Universitaetsstr. 150, 44780 Bochum<br>
+                <a href="mailto:maximilian.golla@rub.de" target="_blank" rel="noopener"><strong>maximilian.golla@rub.de</strong></a><br>
+            </address>
             <a class="btn btn-sm" href="https://www.mpi-sp.org/person/105999/14240" target="_blank" rel="noopener" style="color:#fff;background-color:#006c66;"><i class="fas fa-atom"></i> <span class="network-name">MPI-SP</span></a>
             <a class="btn btn-sm" href="https://www.mobsec.ruhr-uni-bochum.de/group/people/golla_maximilian/" target="_blank" rel="noopener" style="color:#fff;background-color:#17365c;"><i class="fas fa-university"></i> <span class="network-name">RUB</span></a>
+            <a class="btn btn-sm" href="https://twitter.com/m33x" target="_blank" rel="noopener" style="color:#fff;background-color:#1da1f2;"><i class="fab fa-twitter"></i> <span class="network-name">Twitter</span></a>
+            <a class="btn btn-sm btn-success" href="files/2020/pgp/Maximilian_Golla_0F00C809.asc" target="_blank" rel="noopener"><i class="fas fa-key"></i> <span class="network-name">PGP</span></a>
             <hr>
-            <h2 id="publications"><i class="fas fa-search"></i> Peer-Reviewed Publications</h2>
+            <h2 id="publications" class="headline"><i class="fas fa-search"></i> Peer-Reviewed Publications</h2>
             Below you can find a list of selected papers and posters.<br>
             <span class="text-muted list-item-unstyled" style="font-size: 0.8rem;">Last update: August 2020</span>
             <hr>
@@ -211,7 +215,7 @@
                     <li><span class="disabled spacer" aria-disabled="true"></span></li>
                     <!-- Thesis 2019 -->
                     <li>
-                        <strong class="d-inline-block mb-2"><a href="https://www.ieee-security.org/TC/SP2019/" target="_blank" rel="noopener" style="color:black;">PhD Thesis &mdash; Ruhr University Bochum (RUB) &mdash; May, 2019 &mdash; Bochum, Germany</a></strong> <span class="text-success">(<i class="fas fa-medal"></i> Distinguished Thesis Award)</span>
+                        <strong class="d-inline-block mb-2"><a href="https://www.ruhr-uni-bochum.de/en" target="_blank" rel="noopener" style="color:black;">PhD Thesis &mdash; Ruhr University Bochum (RUB) &mdash; May, 2019 &mdash; Bochum, Germany</a></strong> <span class="text-success">(<i class="fas fa-medal"></i> Distinguished Thesis Award)</span>
                         <h5 style="margin-bottom: 0px;" class="text-primary">On the Usability and Security of Password-Based User Authentication</h5>
                         <em><u>Maximilian Golla</u></em>
                         <br>
@@ -467,7 +471,7 @@
                     </li>
             </ul><!-- end list unstyled -->
             <hr>
-            <h2 id="service"><i class="fas fa-comments"></i> Community Service, Committees, Organization, and Reviewing Activities</h2>
+            <h2 id="service" class="headline"><i class="fas fa-comments"></i> Community Service, Committees, and Reviewing Activities</h2>
             <span class="text-muted list-item-unstyled" style="font-size: 0.8rem;">Last update: May 2020</span>
             <hr>
             <ul>
@@ -486,7 +490,7 @@
                 <li><span class="text-danger">Reviewer</span>: 11th International Conference on Passwords (PASSWORDS '16)</li>
             </ul>
             <hr>
-            <h2 id="talks"><i class="fab fa-youtube"></i> Talks</h2>
+            <h2 id="talks" class="headline"><i class="fab fa-youtube"></i> Talks</h2>
             <p>Below you can find some recordings of talks I gave at various conferences.</p>
             <hr>
             <div class="row text-center">
@@ -496,7 +500,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/talks/passwordscon_2019-320-q85.webp 320w, img/talks/passwordscon_2019-480-q85.webp 480w, img/talks/passwordscon_2019-768-q85.webp 768w, img/talks/passwordscon_2019-1024-q85.webp 1024w, img/talks/passwordscon_2019-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/talks/passwordscon_2019-320-q85.jpg 320w, img/talks/passwordscon_2019-480-q85.jpg 480w, img/talks/passwordscon_2019-768-q85.jpg 768w, img/talks/passwordscon_2019-1024-q85.jpg 1024w, img/talks/passwordscon_2019-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/talks/passwordscon_2019-640-q85.jpg" loading="lazy" alt="PasswordsCon 2019: Reasoning Analytically About Password-Cracking Software" class="img-fluid img-thumbnail">
+                            <img src="img/talks/passwordscon_2019-640-q85.jpg" loading="lazy" alt="PasswordsCon 2019: Reasoning Analytically About Password-Cracking Software" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=nk7tRCy5kr8" target="_blank" rel="noopener">PasswordsCon 2019:<br>Reasoning Analytically About Password-Cracking Software</a>
@@ -507,7 +511,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/talks/acm_ccs_2018_1-320-q85.webp 320w, img/talks/acm_ccs_2018_1-480-q85.webp 480w, img/talks/acm_ccs_2018_1-768-q85.webp 768w, img/talks/acm_ccs_2018_1-1024-q85.webp 1024w, img/talks/acm_ccs_2018_1-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/talks/acm_ccs_2018_1-320-q85.jpg 320w, img/talks/acm_ccs_2018_1-480-q85.jpg 480w, img/talks/acm_ccs_2018_1-768-q85.jpg 768w, img/talks/acm_ccs_2018_1-1024-q85.jpg 1024w, img/talks/acm_ccs_2018_1-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/talks/acm_ccs_2018_1-640-q85.jpg" loading="lazy" alt="ACM CCS 2018: Designing Password-Reuse Notifications" class="img-fluid img-thumbnail">
+                            <img src="img/talks/acm_ccs_2018_1-640-q85.jpg" loading="lazy" alt="ACM CCS 2018: Designing Password-Reuse Notifications" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=YUyelgsDWZA" target="_blank" rel="noopener">ACM CCS 2018:<br>Designing Password-Reuse Notifications</a>
@@ -518,7 +522,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/talks/acm_ccs_2018_2-320-q85.webp 320w, img/talks/acm_ccs_2018_2-480-q85.webp 480w, img/talks/acm_ccs_2018_2-768-q85.webp 768w, img/talks/acm_ccs_2018_2-1024-q85.webp 1024w, img/talks/acm_ccs_2018_2-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/talks/acm_ccs_2018_2-320-q85.jpg 320w, img/talks/acm_ccs_2018_2-480-q85.jpg 480w, img/talks/acm_ccs_2018_2-768-q85.jpg 768w, img/talks/acm_ccs_2018_2-1024-q85.jpg 1024w, img/talks/acm_ccs_2018_2-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/talks/acm_ccs_2018_2-640-q85.jpg" loading="lazy" alt="ACM CCS 2018: On the Accuracy of Password Strength Meters" class="img-fluid img-thumbnail">
+                            <img src="img/talks/acm_ccs_2018_2-640-q85.jpg" loading="lazy" alt="ACM CCS 2018: On the Accuracy of Password Strength Meters" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=rx-_RTYSz1g" target="_blank" rel="noopener">ACM CCS 2018:<br>On the Accuracy of Password Strength Meters</a>
@@ -529,7 +533,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/talks/usenix_security_2018-320-q85.webp 320w, img/talks/usenix_security_2018-480-q85.webp 480w, img/talks/usenix_security_2018-768-q85.webp 768w, img/talks/usenix_security_2018-1024-q85.webp 1024w, img/talks/usenix_security_2018-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/talks/usenix_security_2018-320-q85.jpg 320w, img/talks/usenix_security_2018-480-q85.jpg 480w, img/talks/usenix_security_2018-768-q85.jpg 768w, img/talks/usenix_security_2018-1024-q85.jpg 1024w, img/talks/usenix_security_2018-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/talks/usenix_security_2018-640-q85.jpg" loading="lazy" alt="USENIX Security 2018: Rethinking Access Control and Authentication for the Home Internet of Things" class="img-fluid img-thumbnail">
+                            <img src="img/talks/usenix_security_2018-640-q85.jpg" loading="lazy" alt="USENIX Security 2018: Rethinking Access Control and Authentication for the Home Internet of Things" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=LR3zXuZE0h0" target="_blank" rel="noopener">USENIX Security 2018:<br>Rethinking Access Control and Authentication for the Home Internet of Things</a>
@@ -543,7 +547,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/talks/isoc_ndss_2017-320-q85.webp 320w, img/talks/isoc_ndss_2017-480-q85.webp 480w, img/talks/isoc_ndss_2017-768-q85.webp 768w, img/talks/isoc_ndss_2017-1024-q85.webp 1024w, img/talks/isoc_ndss_2017-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/talks/isoc_ndss_2017-320-q85.jpg 320w, img/talks/isoc_ndss_2017-480-q85.jpg 480w, img/talks/isoc_ndss_2017-768-q85.jpg 768w, img/talks/isoc_ndss_2017-1024-q85.jpg 1024w, img/talks/isoc_ndss_2017-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/talks/isoc_ndss_2017-640-q85.jpg" loading="lazy" alt="ISOC NDSS 2017: Towards Implicit Visual Memory-Based Authentication" class="img-fluid img-thumbnail">
+                            <img src="img/talks/isoc_ndss_2017-640-q85.jpg" loading="lazy" alt="ISOC NDSS 2017: Towards Implicit Visual Memory-Based Authentication" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=cyRRBiV1Dyc" target="_blank" rel="noopener">ISOC NDSS 2017:<br>Towards Implicit Visual Memory-Based Authentication</a>
@@ -554,7 +558,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/talks/acm_ccs_2016-320-q85.webp 320w, img/talks/acm_ccs_2016-480-q85.webp 480w, img/talks/acm_ccs_2016-768-q85.webp 768w, img/talks/acm_ccs_2016-1024-q85.webp 1024w, img/talks/acm_ccs_2016-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/talks/acm_ccs_2016-320-q85.jpg 320w, img/talks/acm_ccs_2016-480-q85.jpg 480w, img/talks/acm_ccs_2016-768-q85.jpg 768w, img/talks/acm_ccs_2016-1024-q85.jpg 1024w, img/talks/acm_ccs_2016-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/talks/acm_ccs_2016-640-q85.jpg" loading="lazy" alt="ACM CCS 2016: On the Security of Cracking-Resistant Password Vaults" class="img-fluid img-thumbnail">
+                            <img src="img/talks/acm_ccs_2016-640-q85.jpg" loading="lazy" alt="ACM CCS 2016: On the Security of Cracking-Resistant Password Vaults" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=L1iVp7YAqaw" target="_blank" rel="noopener">ACM CCS 2016:<br>On the Security of Cracking-Resistant Password Vaults</a>
@@ -565,7 +569,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/talks/passwordscon_2015_1-320-q85.webp 320w, img/talks/passwordscon_2015_1-480-q85.webp 480w, img/talks/passwordscon_2015_1-768-q85.webp 768w, img/talks/passwordscon_2015_1-1024-q85.webp 1024w, img/talks/passwordscon_2015_1-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/talks/passwordscon_2015_1-320-q85.jpg 320w, img/talks/passwordscon_2015_1-480-q85.jpg 480w, img/talks/passwordscon_2015_1-768-q85.jpg 768w, img/talks/passwordscon_2015_1-1024-q85.jpg 1024w, img/talks/passwordscon_2015_1-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/talks/passwordscon_2015_1-640-q85.jpg" loading="lazy" alt="PasswordsCon 2015: Analyzing 4 Million Real-World Personal Knowledge Questions" class="img-fluid img-thumbnail">
+                            <img src="img/talks/passwordscon_2015_1-640-q85.jpg" loading="lazy" alt="PasswordsCon 2015: Analyzing 4 Million Real-World Personal Knowledge Questions" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=TbwxvW1X-k4" target="_blank" rel="noopener">PasswordsCon 2015:<br>Analyzing 4 Million Real-World Personal Knowledge Questions</a>
@@ -576,14 +580,14 @@
                         <picture>
                             <source sizes="512vw" srcset="img/talks/passwordscon_2015_2-320-q85.webp 320w, img/talks/passwordscon_2015_2-480-q85.webp 480w, img/talks/passwordscon_2015_2-768-q85.webp 768w, img/talks/passwordscon_2015_2-1024-q85.webp 1024w, img/talks/passwordscon_2015_2-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/talks/passwordscon_2015_2-320-q85.jpg 320w, img/talks/passwordscon_2015_2-480-q85.jpg 480w, img/talks/passwordscon_2015_2-768-q85.jpg 768w, img/talks/passwordscon_2015_2-1024-q85.jpg 1024w, img/talks/passwordscon_2015_2-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/talks/passwordscon_2015_2-640-q85.jpg" loading="lazy" alt="PasswordsCon 2015: A Framework for Comparing Password Guessing Strategies" class="img-fluid img-thumbnail">
+                            <img src="img/talks/passwordscon_2015_2-640-q85.jpg" loading="lazy" alt="PasswordsCon 2015: A Framework for Comparing Password Guessing Strategies" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a><br>
                     <a href="https://www.youtube.com/watch?v=orRNwa1Fsrs" target="_blank" rel="noopener">PasswordsCon 2015:<br>A Framework for Comparing Password Guessing Strategies</a>
                 </div>
             </div>
             <hr>
-            <h2 id="press"><i class="fas fa-rss-square"></i> In the News</h2>
+            <h2 id="press" class="headline"><i class="fas fa-rss-square"></i> In the News</h2>
             <p>Below you can find a list of selected news articles.</p>
             <span class="text-muted list-item-unstyled" style="font-size: 0.8rem;">Last update: August 2020</span>
             <ul class="list-unstyled">
@@ -625,7 +629,7 @@
                 <li><span class="text-primary">NRKbeta</span>: <a class="text-dark" href="https://nrkbeta.no/2018/03/18/vil-du-heller-huske-et-passord-av-emojier/" target="_blank" rel="noopener">Vil du heller huske et passord av emojier?</a> (March 2018)</li>
             </ul>
             <hr>
-            <h2 id="projects"><i class="fas fa-project-diagram"></i> Projects &amp; Software</h2>
+            <h2 id="projects" class="headline"><i class="fas fa-project-diagram"></i> Projects &amp; Software</h2>
             <p>Below you can find a list of cool projects I created or have been involved with.</p>
             <ul class="list-unstyled">
                 <li><hr></li>
@@ -639,7 +643,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2020-unacceptable-privacy-320-q85.webp 320w, img/projects/2020-unacceptable-privacy-480-q85.webp 480w, img/projects/2020-unacceptable-privacy-768-q85.webp 768w, img/projects/2020-unacceptable-privacy-1024-q85.webp 1024w, img/projects/2020-unacceptable-privacy-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2020-unacceptable-privacy-320-q85.jpg 320w, img/projects/2020-unacceptable-privacy-480-q85.jpg 480w, img/projects/2020-unacceptable-privacy-768-q85.jpg 768w, img/projects/2020-unacceptable-privacy-1024-q85.jpg 1024w, img/projects/2020-unacceptable-privacy-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2020-unacceptable-privacy-640-q85.jpg" loading="lazy" alt="Unacceptable-Privacy: Exploring Accidental Triggers of Smart Speakers" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2020-unacceptable-privacy-640-q85.jpg" loading="lazy" alt="Unacceptable-Privacy: Exploring Accidental Triggers of Smart Speakers" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://unacceptable-privacy.github.io" target="_blank" rel="noopener">Unacceptable-Privacy:<br>Exploring Accidental Triggers of Smart Speakers</a>
@@ -650,7 +654,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2020-covid-lens-320-q85.webp 320w, img/projects/2020-covid-lens-480-q85.webp 480w, img/projects/2020-covid-lens-768-q85.webp 768w, img/projects/2020-covid-lens-1024-q85.webp 1024w, img/projects/2020-covid-lens-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2020-covid-lens-320-q85.jpg 320w, img/projects/2020-covid-lens-480-q85.jpg 480w, img/projects/2020-covid-lens-768-q85.jpg 768w, img/projects/2020-covid-lens-1024-q85.jpg 1024w, img/projects/2020-covid-lens-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2020-covid-lens-640-q85.jpg" loading="lazy" alt="COVID-LENS: List COVID-19 Exposure Notification Services" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2020-covid-lens-640-q85.jpg" loading="lazy" alt="COVID-LENS: List COVID-19 Exposure Notification Services" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://covid-lens.github.io" target="_blank" rel="noopener">COVID-LENS:<br>List COVID-19 Exposure Notification Services</a>
@@ -661,7 +665,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2020-pin-blocklists-320-q85.webp 320w, img/projects/2020-pin-blocklists-480-q85.webp 480w, img/projects/2020-pin-blocklists-768-q85.webp 768w, img/projects/2020-pin-blocklists-1024-q85.webp 1024w, img/projects/2020-pin-blocklists-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2020-pin-blocklists-320-q85.jpg 320w, img/projects/2020-pin-blocklists-480-q85.jpg 480w, img/projects/2020-pin-blocklists-768-q85.jpg 768w, img/projects/2020-pin-blocklists-1024-q85.jpg 1024w, img/projects/2020-pin-blocklists-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2020-pin-blocklists-640-q85.jpg" loading="lazy" alt="PIN Blocklists: This PIN Can Be Easily Guessed" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2020-pin-blocklists-640-q85.jpg" loading="lazy" alt="PIN Blocklists: This PIN Can Be Easily Guessed" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://this-pin-can-be-easily-guessed.github.io" target="_blank" rel="noopener">PIN Blocklists:<br>This PIN Can Be Easily Guessed</a>
@@ -679,7 +683,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2019-apc-320-q85.webp 320w, img/projects/2019-apc-480-q85.webp 480w, img/projects/2019-apc-768-q85.webp 768w, img/projects/2019-apc-1024-q85.webp 1024w, img/projects/2019-apc-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2019-apc-320-q85.jpg 320w, img/projects/2019-apc-480-q85.jpg 480w, img/projects/2019-apc-768-q85.jpg 768w, img/projects/2019-apc-1024-q85.jpg 1024w, img/projects/2019-apc-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2019-apc-640-q85.jpg" loading="lazy" alt="Android (Unlock) Pattern Classifier: Unlock Pattern Strength Meter" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2019-apc-640-q85.jpg" loading="lazy" alt="Android (Unlock) Pattern Classifier: Unlock Pattern Strength Meter" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://github.com/RUB-SysSec/APC" target="_blank" rel="noopener">Android (Unlock) Pattern Classifier:<br>Unlock Pattern Strength Meter</a>
@@ -690,7 +694,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2019-nemo-320-q85.webp 320w, img/projects/2019-nemo-480-q85.webp 480w, img/projects/2019-nemo-768-q85.webp 768w, img/projects/2019-nemo-1024-q85.webp 1024w, img/projects/2019-nemo-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2019-nemo-320-q85.jpg 320w, img/projects/2019-nemo-480-q85.jpg 480w, img/projects/2019-nemo-768-q85.jpg 768w, img/projects/2019-nemo-1024-q85.jpg 1024w, img/projects/2019-nemo-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2019-nemo-640-q85.jpg" loading="lazy" alt="NEMO: Modeling Guessability Using Markov Models" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2019-nemo-640-q85.jpg" loading="lazy" alt="NEMO: Modeling Guessability Using Markov Models" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://github.com/RUB-SysSec/NEMO" target="_blank" rel="noopener">NEMO:<br>Modeling Guessability Using Markov Models</a>
@@ -701,7 +705,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2019-g2f-320-q85.webp 320w, img/projects/2019-g2f-480-q85.webp 480w, img/projects/2019-g2f-768-q85.webp 768w, img/projects/2019-g2f-1024-q85.webp 1024w, img/projects/2019-g2f-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2019-g2f-320-q85.jpg 320w, img/projects/2019-g2f-480-q85.jpg 480w, img/projects/2019-g2f-768-q85.jpg 768w, img/projects/2019-g2f-1024-q85.jpg 1024w, img/projects/2019-g2f-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2019-g2f-640-q85.jpg" loading="lazy" alt="2FA Phishing: SMS Verification in Gmail's Confidential Mode" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2019-g2f-640-q85.jpg" loading="lazy" alt="2FA Phishing: SMS Verification in Gmail's Confidential Mode" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/view-email-get-hacked-attacking-sms-based-two-fact/" target="_blank" rel="noopener">2FA Phishing:<br>SMS Verification in Gmail's Confidential Mode</a>
@@ -719,7 +723,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2018-analytic-pw-cracking-320-q85.webp 320w, img/projects/2018-analytic-pw-cracking-480-q85.webp 480w, img/projects/2018-analytic-pw-cracking-768-q85.webp 768w, img/projects/2018-analytic-pw-cracking-1024-q85.webp 1024w, img/projects/2018-analytic-pw-cracking-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2018-analytic-pw-cracking-320-q85.jpg 320w, img/projects/2018-analytic-pw-cracking-480-q85.jpg 480w, img/projects/2018-analytic-pw-cracking-768-q85.jpg 768w, img/projects/2018-analytic-pw-cracking-1024-q85.jpg 1024w, img/projects/2018-analytic-pw-cracking-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2018-analytic-pw-cracking-640-q85.jpg" loading="lazy" alt="Analytic Password Cracking: Reasoning About Password-Cracking Software" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2018-analytic-pw-cracking-640-q85.jpg" loading="lazy" alt="Analytic Password Cracking: Reasoning About Password-Cracking Software" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://github.com/UChicagoSUPERgroup/analytic-password-cracking" target="_blank" rel="noopener">Analytic Password Cracking:<br>Reasoning About Password-Cracking Software</a>
@@ -730,7 +734,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2018-meter-320-q85.webp 320w, img/projects/2018-meter-480-q85.webp 480w, img/projects/2018-meter-768-q85.webp 768w, img/projects/2018-meter-1024-q85.webp 1024w, img/projects/2018-meter-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2018-meter-320-q85.jpg 320w, img/projects/2018-meter-480-q85.jpg 480w, img/projects/2018-meter-768-q85.jpg 768w, img/projects/2018-meter-1024-q85.jpg 1024w, img/projects/2018-meter-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2018-meter-640-q85.jpg" loading="lazy" alt="Password Strength Meters: Meter Comparison Made Simple" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2018-meter-640-q85.jpg" loading="lazy" alt="Password Strength Meters: Meter Comparison Made Simple" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://password-meter-comparison.org" target="_blank" rel="noopener">Password Strength Meters:<br>Meter Comparison Made Simple</a>
@@ -741,7 +745,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2018-fallback-320-q85.webp 320w, img/projects/2018-fallback-480-q85.webp 480w, img/projects/2018-fallback-768-q85.webp 768w, img/projects/2018-fallback-1024-q85.webp 1024w, img/projects/2018-fallback-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2018-fallback-320-q85.jpg 320w, img/projects/2018-fallback-480-q85.jpg 480w, img/projects/2018-fallback-768-q85.jpg 768w, img/projects/2018-fallback-1024-q85.jpg 1024w, img/projects/2018-fallback-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2018-fallback-640-q85.jpg" loading="lazy" alt="Comparing Fallback Schemes: Usability Study of Fallback Authentication" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2018-fallback-640-q85.jpg" loading="lazy" alt="Comparing Fallback Schemes: Usability Study of Fallback Authentication" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/work-progress-comparative-long-term-study-fallback/" target="_blank" rel="noopener">Comparing Fallback Schemes:<br>Usability Study of Fallback Authentication</a>
@@ -759,7 +763,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2017-gamification-320-q85.webp 320w, img/projects/2017-gamification-480-q85.webp 480w, img/projects/2017-gamification-768-q85.webp 768w, img/projects/2017-gamification-1024-q85.webp 1024w, img/projects/2017-gamification-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2017-gamification-320-q85.jpg 320w, img/projects/2017-gamification-480-q85.jpg 480w, img/projects/2017-gamification-768-q85.jpg 768w, img/projects/2017-gamification-1024-q85.jpg 1024w, img/projects/2017-gamification-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2017-gamification-640-q85.jpg" loading="lazy" alt="Bars, Badges, and High Scores: Impact of Password Strength Visualizations" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2017-gamification-640-q85.jpg" loading="lazy" alt="Bars, Badges, and High Scores: Impact of Password Strength Visualizations" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/impact-of-password-strength-visualizations/" target="_blank" rel="noopener">Bars, Badges, and High Scores:<br>Impact of Password Strength Visualizations</a>
@@ -769,7 +773,7 @@
                     <picture>
                         <source sizes="512vw" srcset="img/projects/2017-vr-320-q85.webp 320w, img/projects/2017-vr-480-q85.webp 480w, img/projects/2017-vr-768-q85.webp 768w, img/projects/2017-vr-1024-q85.webp 1024w, img/projects/2017-vr-1400-q85.webp 1280w" type="image/webp">
                         <source sizes="512vw" srcset="img/projects/2017-vr-320-q85.jpg 320w, img/projects/2017-vr-480-q85.jpg 480w, img/projects/2017-vr-768-q85.jpg 768w, img/projects/2017-vr-1024-q85.jpg 1024w, img/projects/2017-vr-1400-q85.jpg 1280w" type="image/jpeg">
-                        <img src="img/projects/2017-vr-640-q85.jpg" loading="lazy" alt="Authentication in Virtual Reality: Predictive Keyboard for Entering Passwords" class="img-fluid img-thumbnail">
+                        <img src="img/projects/2017-vr-640-q85.jpg" loading="lazy" alt="Authentication in Virtual Reality: Predictive Keyboard for Entering Passwords" class="img-fluid img-thumbnail zoom">
                     </picture>
                     <span class="text-primary">Authentication in Virtual Reality:<br>Predictive Keyboard for Entering Passwords</span>
                 </div>
@@ -779,7 +783,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2017-mooneyauth-320-q85.webp 320w, img/projects/2017-mooneyauth-480-q85.webp 480w, img/projects/2017-mooneyauth-768-q85.webp 768w, img/projects/2017-mooneyauth-1024-q85.webp 1024w, img/projects/2017-mooneyauth-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2017-mooneyauth-320-q85.jpg 320w, img/projects/2017-mooneyauth-480-q85.jpg 480w, img/projects/2017-mooneyauth-768-q85.jpg 768w, img/projects/2017-mooneyauth-1024-q85.jpg 1024w, img/projects/2017-mooneyauth-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2017-mooneyauth-640-q85.jpg" loading="lazy" alt="MooneyAuth: Implicit (Fallback) Authentication" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2017-mooneyauth-640-q85.jpg" loading="lazy" alt="MooneyAuth: Implicit (Fallback) Authentication" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://mooneyauth.org" target="_blank" rel="noopener">MooneyAuth:<br>Implicit (Fallback) Authentication</a>
@@ -797,7 +801,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2016-nocrack-320-q85.webp 320w, img/projects/2016-nocrack-480-q85.webp 480w, img/projects/2016-nocrack-768-q85.webp 768w, img/projects/2016-nocrack-1024-q85.webp 1024w, img/projects/2016-nocrack-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2016-nocrack-320-q85.jpg 320w, img/projects/2016-nocrack-480-q85.jpg 480w, img/projects/2016-nocrack-768-q85.jpg 768w, img/projects/2016-nocrack-1024-q85.jpg 1024w, img/projects/2016-nocrack-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2016-nocrack-640-q85.jpg" loading="lazy" alt="Cracking NoCrack: Security of Cracking-Resistant Vaults" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2016-nocrack-640-q85.jpg" loading="lazy" alt="Cracking NoCrack: Security of Cracking-Resistant Vaults" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://github.com/RUB-SysSec/NEMO" target="_blank" rel="noopener">Cracking NoCrack:<br>Security of Cracking-Resistant Vaults</a>
@@ -808,7 +812,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2016-omen-320-q85.webp 320w, img/projects/2016-omen-480-q85.webp 480w, img/projects/2016-omen-768-q85.webp 768w, img/projects/2016-omen-1024-q85.webp 1024w, img/projects/2016-omen-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2016-omen-320-q85.jpg 320w, img/projects/2016-omen-480-q85.jpg 480w, img/projects/2016-omen-768-q85.jpg 768w, img/projects/2016-omen-1024-q85.jpg 1024w, img/projects/2016-omen-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2016-omen-640-q85.jpg" loading="lazy" alt="Ordered Markov ENumerator" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2016-omen-640-q85.jpg" loading="lazy" alt="Ordered Markov ENumerator" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://github.com/RUB-SysSec/OMEN" target="_blank" rel="noopener">OMEN:<br>Ordered Markov ENumerator</a>
@@ -819,7 +823,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2016-pictopass-320-q85.webp 320w, img/projects/2016-pictopass-480-q85.webp 480w, img/projects/2016-pictopass-768-q85.webp 768w, img/projects/2016-pictopass-1024-q85.webp 1024w, img/projects/2016-pictopass-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2016-pictopass-320-q85.jpg 320w, img/projects/2016-pictopass-480-q85.jpg 480w, img/projects/2016-pictopass-768-q85.jpg 768w, img/projects/2016-pictopass-1024-q85.jpg 1024w, img/projects/2016-pictopass-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2016-pictopass-640-q85.jpg" loading="lazy" alt="EmojiAuth: Emoji-based Mobile Authentication" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2016-pictopass-640-q85.jpg" loading="lazy" alt="EmojiAuth: Emoji-based Mobile Authentication" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://www.mobsec.ruhr-uni-bochum.de/forschung/veroeffentlichungen/quantifying-security-emoji-based-authentication/" target="_blank" rel="noopener">EmojiAuth:<br>Emoji-based Mobile Authentication</a>
@@ -837,7 +841,7 @@
                         <picture>
                             <source sizes="512vw" srcset="img/projects/2015-pgf-320-q85.webp 320w, img/projects/2015-pgf-480-q85.webp 480w, img/projects/2015-pgf-768-q85.webp 768w, img/projects/2015-pgf-1024-q85.webp 1024w, img/projects/2015-pgf-1400-q85.webp 1280w" type="image/webp">
                             <source sizes="512vw" srcset="img/projects/2015-pgf-320-q85.jpg 320w, img/projects/2015-pgf-480-q85.jpg 480w, img/projects/2015-pgf-768-q85.jpg 768w, img/projects/2015-pgf-1024-q85.jpg 1024w, img/projects/2015-pgf-1400-q85.jpg 1280w" type="image/jpeg">
-                            <img src="img/projects/2015-pgf-640-q85.jpg" loading="lazy" alt="Comparing Guessing Strategies: Framework for Comparing Password Guesser" class="img-fluid img-thumbnail">
+                            <img src="img/projects/2015-pgf-640-q85.jpg" loading="lazy" alt="Comparing Guessing Strategies: Framework for Comparing Password Guesser" class="img-fluid img-thumbnail zoom">
                         </picture>
                     </a>
                     <a href="https://www.password-guessing.org" target="_blank" rel="noopener">Comparing Guessing Strategies:<br>Framework for Comparing Password Guesser</a>
@@ -847,7 +851,7 @@
                     <picture>
                         <source sizes="512vw" srcset="img/projects/2015-crawler-320-q85.webp 320w, img/projects/2015-crawler-480-q85.webp 480w, img/projects/2015-crawler-768-q85.webp 768w, img/projects/2015-crawler-1024-q85.webp 1024w, img/projects/2015-crawler-1400-q85.webp 1280w" type="image/webp">
                         <source sizes="512vw" srcset="img/projects/2015-crawler-320-q85.jpg 320w, img/projects/2015-crawler-480-q85.jpg 480w, img/projects/2015-crawler-768-q85.jpg 768w, img/projects/2015-crawler-1024-q85.jpg 1024w, img/projects/2015-crawler-1400-q85.jpg 1280w" type="image/jpeg">
-                        <img src="img/projects/2015-crawler-640-q85.jpg" loading="lazy" alt="Gathering User Information: PII-Based Password Guessing" class="img-fluid img-thumbnail">
+                        <img src="img/projects/2015-crawler-640-q85.jpg" loading="lazy" alt="Gathering User Information: PII-Based Password Guessing" class="img-fluid img-thumbnail zoom">
                     </picture>
                     <span class="text-primary">Gathering User Information:<br>PII-Based Password Guessing</span>
                 </div>
@@ -856,7 +860,7 @@
                     <picture>
                         <source sizes="512vw" srcset="img/projects/2015-rythm-320-q85.webp 320w, img/projects/2015-rythm-480-q85.webp 480w, img/projects/2015-rythm-768-q85.webp 768w, img/projects/2015-rythm-1024-q85.webp 1024w, img/projects/2015-rythm-1400-q85.webp 1280w" type="image/webp">
                         <source sizes="512vw" srcset="img/projects/2015-rythm-320-q85.jpg 320w, img/projects/2015-rythm-480-q85.jpg 480w, img/projects/2015-rythm-768-q85.jpg 768w, img/projects/2015-rythm-1024-q85.jpg 1024w, img/projects/2015-rythm-1400-q85.jpg 1280w" type="image/jpeg">
-                        <img src="img/projects/2015-rythm-640-q85.jpg" loading="lazy" alt="Learning Authentication Secrets: Knock Patterns" class="img-fluid img-thumbnail">
+                        <img src="img/projects/2015-rythm-640-q85.jpg" loading="lazy" alt="Learning Authentication Secrets: Knock Patterns" class="img-fluid img-thumbnail zoom">
                     </picture>
                     <span class="text-primary">Learning Authentication Secrets:<br>Knock Patterns</span>
                 </div>
@@ -872,7 +876,7 @@
                     <picture>
                         <source sizes="512vw" srcset="img/projects/2014-icloud-320-q85.webp 320w, img/projects/2014-icloud-480-q85.webp 480w, img/projects/2014-icloud-768-q85.webp 768w, img/projects/2014-icloud-1024-q85.webp 1024w, img/projects/2014-icloud-1400-q85.webp 1280w" type="image/webp">
                         <source sizes="512vw" srcset="img/projects/2014-icloud-320-q85.jpg 320w, img/projects/2014-icloud-480-q85.jpg 480w, img/projects/2014-icloud-768-q85.jpg 768w, img/projects/2014-icloud-1024-q85.jpg 1024w, img/projects/2014-icloud-1400-q85.jpg 1280w" type="image/jpeg">
-                        <img src="img/projects/2014-icloud-640-q85.jpg" loading="lazy" alt="Attacking Audio CAPTCHAs: Breaking Apple's iCloud Audio CAPTCHA" class="img-fluid img-thumbnail">
+                        <img src="img/projects/2014-icloud-640-q85.jpg" loading="lazy" alt="Attacking Audio CAPTCHAs: Breaking Apple's iCloud Audio CAPTCHA" class="img-fluid img-thumbnail zoom">
                     </picture>
                     <span class="text-primary">Attacking Audio CAPTCHAs:<br>Breaking Apple's iCloud Audio CAPTCHA</span>
                 </div>
@@ -881,7 +885,7 @@
                     <picture>
                         <source sizes="512vw" srcset="img/projects/2014-gfa-320-q85.webp 320w, img/projects/2014-gfa-480-q85.webp 480w, img/projects/2014-gfa-768-q85.webp 768w, img/projects/2014-gfa-1024-q85.webp 1024w, img/projects/2014-gfa-1400-q85.webp 1280w" type="image/webp">
                         <source sizes="512vw" srcset="img/projects/2014-gfa-320-q85.jpg 320w, img/projects/2014-gfa-480-q85.jpg 480w, img/projects/2014-gfa-768-q85.jpg 768w, img/projects/2014-gfa-1024-q85.jpg 1024w, img/projects/2014-gfa-1400-q85.jpg 1280w" type="image/jpeg">
-                        <img src="img/projects/2014-gfa-640-q85.jpg" loading="lazy" alt="Graphical Fallback Authentication: Google Street View-Based Authentication" class="img-fluid img-thumbnail">
+                        <img src="img/projects/2014-gfa-640-q85.jpg" loading="lazy" alt="Graphical Fallback Authentication: Google Street View-Based Authentication" class="img-fluid img-thumbnail zoom">
                     </picture>
                     <span class="text-primary">Graphical Fallback Authentication:<br>Google Street View-Based Authentication</span>
                 </div>
