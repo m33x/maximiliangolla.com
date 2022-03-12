@@ -18,14 +18,46 @@
        url('../../webfonts/quicksand-v28-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../../webfonts/quicksand-v28-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* metrophobic-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Metrophobic';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../../webfonts/metrophobic-v17-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../webfonts/metrophobic-v17-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
+    font-family: 'Metrophobic', sans-serif;
     font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* Navbar Hacks */
+/* Current active */
+.navbar-nav > .active > a {
+    color: #0d6efd!important;
+    font-weight: bold;
+}
+.nav-link {
+    color: #000 !important;
+}
+.nav-item .text-muted{
+    color: #6c757d!important
+}
+
+/* On mouse over */
+.nav-item > a:hover {
+    color: #0d6efd!important;
 }
 
 /*** Google Web Fonts - END ***/
@@ -46,8 +78,61 @@ body > .container {
     padding: 0rem 0.25rem 0.25rem 0.25rem;
 }
 
+/* Buttons */
 .paper-button {
     margin-top: 0.25rem;
+}
+.mpi-button:hover {
+    color: #fff;
+    background-color: #006c66;
+}
+.rub-button:hover {
+    color: #fff;
+    background-color:#17365c;
+}
+.twitter-button:hover {
+    color: #fff;
+    background-color: #1da1f2;
+}
+.slack-button:hover {
+    color: #fff;
+    background-color: #511851;
+}
+.github-button:hover {
+    color: #fff;
+    background-color: #000;
+}
+.google-hall-of-fame-button:hover {
+    color: #fff;
+    background-color: #0c9d58;
+}
+.pgp-key-button:hover {
+    color: #fff;
+    background-color:#0093DD;
+}
+.google-scholar-button:hover {
+    color: #fff;
+    background-color: #4285F4;
+}
+.dblp-button:hover {
+    color: #fff;
+    background-color: #deb41d;
+}
+.orcid-button:hover {
+    color: #fff;
+    background-color: #99bb3d;
+}
+.ieee-xplore-button:hover {
+     color: #fff;
+     background-color: #17445a;
+}
+.acm-dl-button:hover {
+    color: #fff;
+    background-color: #000;
+}
+.research-gate-button:hover {
+    color: #fff;
+    background-color: #10aea1;
 }
 
 .card-text {

@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
     'use strict';
-
+    /*
     $(".smooth-scroll").on('click', 'a', function (e) {
         // Iterate over all and remove active class
         $.each($(".nav-item"), function () {
@@ -23,5 +23,6 @@ $(document).ready(function () {
             window.location.hash = hash;
         }
     });
+    */
 
 });
