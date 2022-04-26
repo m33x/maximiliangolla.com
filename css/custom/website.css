@@ -106,6 +106,10 @@ body > .container {
     color: #fff;
     background-color: #0c9d58;
 }
+.apple-hall-of-fame-button:hover {
+    color: #fff;
+    background-color: #000;
+}
 .pgp-key-button:hover {
     color: #fff;
     background-color:#0093DD;
