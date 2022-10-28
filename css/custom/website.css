@@ -93,6 +93,10 @@ body > .container {
     color: #fff;
     background-color: #1da1f2;
 }
+.mastodon-button:hover {
+    color: #fff;
+    background-color: #8c8dff;
+}
 .slack-button:hover {
     color: #fff;
     background-color: #511851;
