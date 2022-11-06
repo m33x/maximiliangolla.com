@@ -97,6 +97,10 @@ body > .container {
     color: #fff;
     background-color: #8c8dff;
 }
+.linkedin-button:hover {
+    color: #fff;
+    background-color: #1166c2;
+}
 .slack-button:hover {
     color: #fff;
     background-color: #511851;
