@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Meta -->
+        <meta name="description" content="Personal website of Maximilian Golla. Postdoctoral researcher interested in usable security and privacy.">
+        <meta name="keywords" content="blog">
+        <meta name="author" content="Maximilian Golla">
+        <!-- Performance -->
+        <link rel="preload" as="font" href="../../webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="../../webfonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="../../webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="../../webfonts/fa-v4compatibility.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="../../webfonts/quicksand-v28-latin-ext_latin-500.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="../../webfonts/quicksand-v28-latin-ext_latin-700.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="../../webfonts/vt323-v17-latin-ext_latin-regular.woff2" type="font/woff2" crossorigin="anonymous">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@m33x">
+        <meta name="twitter:title" content="Blog of Maximilian Golla.">
+        <meta name="twitter:description" content="Postdoctoral researcher interested in usable security and privacy.">
+        <meta name="twitter:image" content="https://maximiliangolla.com/img/twittercard.jpg">
+        <!-- Facebook Card -->
+        <meta property="og:url" content="https://maximiliangolla.com">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Blog of Maximilian Golla.">
+        <meta property="og:description" content="Postdoctoral researcher interested in usable security and privacy.">
+        <meta property="og:image" content="https://maximiliangolla.com/img/twittercard.jpg">
+        <!-- Style -->
+        <link rel="shortcut icon" href="../../ico/favicon.ico">
+        <title>Blog</title>
+        <link href="../../css/thirdparty/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/custom/website.css?v=1337" rel="stylesheet">
+        <link href="../../css/thirdparty/fontawesome.all.min.css" rel="stylesheet">
+        <!-- Prism.js CSS -->
+        <link href="../../css/thirdparty/prism.css" rel="stylesheet">
+    </head>
+    <body id="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html"><picture><source srcset="../../img/logos/mg-trans.webp" type="image/webp"><source srcset="../../img/logos/mg-trans.png" type="image/png"><img src="../img/logos/mg-trans.png" width="32" height="32" alt="MG Logo" class="d-inline-block align-top" loading="lazy"></picture></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 smooth-scroll">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../research.html">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../publications.html">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../talks.html">Talks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../news.html">Press</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../projects.html">Projects</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="../index.html">Blog <span class="sr-only">(current)</span></a></li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-muted" role="button" href="../../legal.html">Legal Notice</a></li>
+                        <li class="nav-item"><a class="nav-link text-muted" role="button" href="../../privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <hr>
+            <h2 id="press" class="headline"><i class="fa-solid fa-blog"></i> Saving Energy: Home Server That Automatically Suspends to RAM and Wakes Up Again</h2>
+            ... which is used for Plex media streaming and Time Machine backups.<br>
+            <span class="text-muted list-item-unstyled" style="font-size: 1rem;"><b>Last update</b>: October 2022</span><br>
+            <span class="text-muted list-item-unstyled" style="font-size: 1rem;"><b>Author</b>: <a class="text-decoration-none text-muted" href="../../index.html">Maximilian Golla</a></span><br>
+            <span class="text-muted list-item-unstyled" style="font-size: 1rem;"><b>Keywords</b>: Wake-on-LAN (WOL), Suspend to RAM (S3), Plex, Time Machine, Home Assistant (HASS), Saving Energy, Python, Ubuntu</span>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-warning text-center" role="alert">
+                        <i class="fa-solid fa-triangle-exclamation"></i> This blog post is <strong>not intended as a step-by-step guide</strong>. You will need to figure it out yourself, but I uploaded the entire project to GitHub.
+                    </div>
+                    <h3>43 Watts Is Just Too Much!</h3>
+                    <p>
+                        It does not sound like much, but running a 24/7 home server that draws <mark>43 watts in idle is quiet expensive</mark>, considering the latest electricity prices of about 49&nbsp;euro&nbsp;cent/kWh here in Germany (as of October, 2022).
+                        A simple solution to this problem is <b>a script that automatically suspends the server, when it is not used</b>, and another script to wake the server up again, in case there is work to do.
+                        To my surprise I could not find any out-of-the-box solution, so I thought, it is a worthwhile effort to write about it.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <picture>
+                        <source sizes="768vw" srcset="img/power-320-q85.webp 320w, img/power-480-q85.webp 480w, img/power-768-q85.webp 768w, img/power-1024-q85.webp 1024w, img/power-1400-q85.webp 1280w" type="image/webp">
+                        <source sizes="768vw" srcset="img/power-320-q85.jpg 320w, img/power-480-q85.jpg 480w, img/power-768-q85.jpg 768w, img/power-1024-q85.jpg 1024w, img/power-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/power-1024-q85.jpg" width="1024" height="497" alt="Power Consumption Comparison" class="img-fluid rounded float-right zoom">
+                    </picture>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class>
+                        <i class="fa-solid fa-circle-question"></i>&nbsp;By the way: Why aren't there any good solutions out there? Why isn't this build into every major operating system by now? <b>Why isn't this the default</b> (or at least a configuration option)? Seriously, there is soooo much potential to save energy in IT.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Requirements & Specification</h3>
+                    <p>
+                        Currently, the server is primarily used for two things:
+                    </p>
+                    <ul>
+                        <li><a href="https://plex.tv" target="_blank" rel="noopener">Plex</a> Media Streaming (remotely)</li>
+                        <li><a href="https://support.apple.com/en-us/HT201250" target="_blank" rel="noopener">Time Machine</a> Backups (locally)</li>
+                    </ul>
+                    <p>
+                        So I was forced to find a way to automatically suspend the server, but prevent it from sleeping, if any of the two services are in use.
+                        Moreover, I needed a way to wake up the server remotely, so in case that I am not a home, I could still access Plex, which led to the need for the following two components:
+                    </p>
+                    <ol type="I">
+                        <li>A script that suspends the server automatically, in case the server is not used</li>
+                        <li>A (mobile friendly) website that allows to wake up the server, in case I need it</li>
+                    </ol>
+                    <p>
+                        Finally, I do have a <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank" rel="noopener">Raspberry Pi 4 Model B 4GB</a> at home that is running all the time.
+                        This Pi is used for hosting <a href="https://www.home-assistant.io" target="_blank" rel="noopener">Home Assistant</a> (HASS) and <a href="https://pi-hole.net" target="_blank" rel="noopener">Pi-hole</a> and it could become very handy for monitoring the sleep state of the server and hosting the wake up website.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>The Idea</h3>
+                    <p>
+                        The high-level idea that came to my mind looks similar to this:
+                        Macs in my local network access the server via <a href="https://en.wikipedia.org/wiki/Server_Message_Block" target="_blank" rel="noopener">SMB</a> for Time Machine backups.
+                        From remote, I access Plex via <a href="https://support.plex.tv/articles/200289506-remote-access/" target="_blank" rel="noopener">HTTPS</a> for streaming.
+                        In case the server sleeps, I need a convenient solution to wake the server remotely via my smartphone.
+                        The Raspberry Pi is running 24/7 and already hosts Home Assistant that offers a <a href="https://www.home-assistant.io/integrations/wake_on_lan/" target="_blank" rel="noopener">Wake on LAN</a> and <a href="https://www.home-assistant.io/integrations/fritz/" target="_blank" rel="noopener">Device tracker</a> integration.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <picture>
+                        <source sizes="768vw" srcset="img/network-architecture-320-q85.webp 320w, img/network-architecture-480-q85.webp 480w, img/network-architecture-768-q85.webp 768w, img/network-architecture-1024-q85.webp 1024w, img/network-architecture-1400-q85.webp 1280w" type="image/webp">
+                        <source sizes="768vw" srcset="img/network-architecture-320-q85.jpg 320w, img/network-architecture-480-q85.jpg 480w, img/network-architecture-768-q85.jpg 768w, img/network-architecture-1024-q85.jpg 1024w, img/network-architecture-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/network-architecture-1024-q85.jpg" width="1024" height="346" alt="Network Architecture" class="img-fluid rounded float-right zoom">
+                    </picture>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>The Implementation (on the Shoulders of Giants)</h3>
+                    <p>
+                        Fast forward a number of weeks testing various options, my setup currently looks like this:
+                        The server implements a <a href="https://en.wikipedia.org/wiki/Circular_buffer" target="_blank" rel="noopener">ring buffer</a> and checks for activities once per minute.
+                        To monitor Plex activities, we access the <a href="https://support.plex.tv/articles/201638786-plex-media-server-url-commands/" target="_blank" rel="noopener">local Plex API</a> and for Time Machine we simply monitor any file access at <code>/mnt</code> using <a href="https://en.wikipedia.org/wiki/Lsof" target="_blank" rel="noopener">lsof</a>.
+                        In case there has been no activity for 15 consecutive minutes, the server goes to sleep. (Nobody streams, pausing a video doesn't count as activity, and no backup is running.)
+                        A Web server on the Raspberry Pi hosts a website that obtains the current state of the server provided via the <a href="https://developers.home-assistant.io/docs/api/rest/" target="_blank" rel="noopener">Home Assistant REST API</a>.
+                        In case the server sleeps, and I like to backup or stream something, I can wake the server using a simple button press that sends a <a href="https://en.wikipedia.org/wiki/Wake-on-LAN#Magic_packet" target="_blank" rel="noopener">magic packet</a> using a <a href="https://github.com/jpoliv/wakeonlan" target="_blank" rel="noopener">wakeonlan Perl script</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <picture>
+                        <source sizes="768vw" srcset="img/software-architecture-320-q85.webp 320w, img/software-architecture-480-q85.webp 480w, img/software-architecture-768-q85.webp 768w, img/software-architecture-1024-q85.webp 1024w, img/software-architecture-1400-q85.webp 1280w" type="image/webp">
+                        <source sizes="768vw" srcset="img/software-architecture-320-q85.jpg 320w, img/software-architecture-480-q85.jpg 480w, img/software-architecture-768-q85.jpg 768w, img/software-architecture-1024-q85.jpg 1024w, img/software-architecture-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/software-architecture-1024-q85.jpg" width="1024" height="493" alt="Software Architecture" class="img-fluid rounded float-right zoom">
+                    </picture>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h3>How to Sleep (And When Better Not)</h3>
+
+                    <h4>Monitoring Backups:</h4>
+                    <p>My backup disk is mounted under <code>/mnt/backup</code>. We monitor whether there is any file access on <code>/mnt</code>.</p>
+<pre><code class="language-python">def is_someone_accessing_files_check():
+    try:
+        print("New file access check...having a look at '/mnt'")
+        response = subprocess.getoutput("lsof -w /mnt/* | grep /mnt/ | wc -l")
+        if response == '0':
+            return False
+        return True
+    except Exception:
+        return True</code></pre>
+                    <h4>Monitoring Plex:</h4>
+                    <p>There are many possible solutions to this problem. The most reliable was to use the <a href="https://support.plex.tv/articles/201638786-plex-media-server-url-commands/" target="_blank" rel="noopener">local Plex API</a>.
+                        In contrast to simpler solutions this comes with the advantage that we can differentiate between <b>active playbacks</b> and <mark>people that paused the streaming</mark> (but still have the browser tab open, usually preventing the server from sleeping 😈).
+                        You can find your <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/" target="_blank" rel="noopener">account authentication token for Plex here</a>.</p>
+<pre><code class="language-python">PLEX_AUTH_TOKEN = 'your-plex-auth-token'
+
+def is_someone_streaming_check():
+    """Query the Plex API and obtain the number and state of current sessions."""
+    try:
+        print("New streaming check...having a look at Plex sessions")
+        my_headers = {}
+        my_headers['X-Plex-Token'] = PLEX_AUTH_TOKEN
+        my_headers['accept'] = 'application/json'
+        url = 'http://127.0.0.1:32400/status/sessions'
+        data = requests.get(url, headers=my_headers).json()
+        size = None
+        if 'MediaContainer' in data:
+            if 'size' in data['MediaContainer']:
+                size = data['MediaContainer']['size']
+        print(f"Currently there are {size} users online ...")
+        users = []
+        if 'MediaContainer' in data:
+            if 'Metadata' in data['MediaContainer']:
+                for session in data['MediaContainer']['Metadata']:
+                    user = {'User': None, 'State': None, 'Platform': None, 'IP': None, 'Started': None}
+                    if 'User' in session:
+                        if 'title' in session['User']:
+                            user['User'] = session['User']['title']
+                    if 'Player' in session:
+                        if 'state' in session['Player']:
+                            user['State'] = session['Player']['state']
+                    ...
+                    users.append(user)
+        streaming = False
+        for user in users:
+            print(user)
+            if user['State'] != 'paused':
+                streaming = True
+        return streaming
+    except Exception:
+        return True</code></pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4>Putting It All Together:</h4>
+                    <p>
+                        The script runs once per minute and suspends the server after 15 consecutive minutes without any activity by calling <code>/usr/sbin/pm-suspend</code>.
+                        To avoid the need to run the script as root, consider adding <span style="font-family:monospace;">my_user ALL=NOPASSWD:/usr/sbin/pm-suspend</span> to your <code>/etc/sudoers</code> file (then execute <code>sudo pm-suspend</code>).
+                    </p>
+<pre><code class="language-plaintext">###### 2022-10-14 15:35:56
+New file access check...having a look at '/mnt'
+File access: True
+New streaming check...having a look at Plex sessions
+Currently there are 2 users online ...
+{'User': 'my_user1', 'State': 'paused',  'Platform': 'Firefox', 'IP': 'a.b.c.d', 'Started': '2022-10-14 12:29:18'}
+{'User': 'my_user2', 'State': 'playing', 'Platform': 'Chrome',  'IP': 'a.b.c.d', 'Started': '2022-10-14 15:34:57'}
+Streaming: True
+Currently there are 14 activities in the past 15 minutes...
+Will check again in 60 seconds...</code></pre>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h3>How to Wake Up Again</h3>
+                    <h4>Enable Wake on LAN (WoL):</h4>
+                    <p>
+                        There are <a href="https://necromuralist.github.io/posts/enabling-wake-on-lan/" target="_blank" rel="noopener">many tutorials out there</a>.
+                        Check your <a href="https://www.asrock.com/support/faq.asp?k=wake+on+lan" target="_blank" rel="noopener">BIOS/UEFI</a> first, then install <code>ethtool</code>, and configure a <code>wol.service</code> that re-enables WoL every time you reboot the machine.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4>The Web Interface</h4>
+                    <p>
+                        We create a <a href="https://getbootstrap.com" target="_blank" rel="noopener">mobile-friendly website</a> that queries and displays the current server status using the <a href="https://developers.home-assistant.io/docs/api/rest/" target="_blank" rel="noopener">Home Assistant REST API</a>.
+                        It also offers a button that sends a <a href="https://en.wikipedia.org/wiki/Wake-on-LAN#Magic_packet" target="_blank" rel="noopener">magic packet</a> using a <a href="https://github.com/jpoliv/wakeonlan" target="_blank" rel="noopener">wakeonlan Perl script</a>.
+                        Currently, there is no authentication in place.
+                        If you feel the need, it should be super easy to add <a href="https://www.howtogeek.com/devops/how-to-setup-basic-http-authentication-on-apache/" target="_blank" rel="noopener">HTTP Basic Authentication</a> by tweaking the configuration of your Web server.
+                        <br>
+                        <i class="fa-solid fa-circle-info"></i>&nbsp;Note: The Home Assistant <a href="https://www.home-assistant.io/integrations/wake_on_lan/" target="_blank" rel="noopener">Wake on LAN</a> integration also allows to wake the machine, but I explicitly opted for this Perl script-setup, because it enables me to wake the server even in the case Home Assistant is down or currently unavailable.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <picture>
+                        <source sizes="768vw" srcset="img/webinterface-320-q85.webp 320w, img/webinterface-480-q85.webp 480w, img/webinterface-768-q85.webp 768w, img/webinterface-1024-q85.webp 1024w, img/webinterface-1400-q85.webp 1280w" type="image/webp">
+                        <source sizes="768vw" srcset="img/webinterface-320-q85.jpg 320w, img/webinterface-480-q85.jpg 480w, img/webinterface-768-q85.jpg 768w, img/webinterface-1024-q85.jpg 1024w, img/webinterface-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/webinterface-1024-q85.jpg" width="1024" height="344" alt="Web Interface" class="img-fluid rounded float-right zoom">
+                    </picture>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4>Querying Home Assistant:</h4>
+                    <p>
+                        OMG, PHP! Yes, I know. 🤦 After installing and configuring the Home Assistant <a href="https://www.home-assistant.io/integrations/wake_on_lan/" target="_blank" rel="noopener">Wake on LAN</a> integration, we can query the <a href="https://developers.home-assistant.io/docs/api/rest/" target="_blank" rel="noopener">Home Assistant REST API</a>.
+                        For authentication, you need a <a href="https://developers.home-assistant.io/docs/auth_api/#long-lived-access-token" target="_blank" rel="noopener">Long-Lived Access Token</a> (valid for 10 years) that you can generate <b>in your user profile</b> (<code>https://example.org/profile</code>).
+                    </p>
+<pre><code class="language-php">header('Content-Type: application/json; charset=utf-8');
+
+$info = json_decode(getStateFromHASS(), true);
+$state = $info['state'];
+$last_changed = parseDate($info['last_changed']);
+$output = json_encode(array('state' => $state, 'last_changed' => $last_changed));
+echo $output; // {"state":"off","last_changed":"2022-10-14 10:17:07"}
+
+function getStateFromHASS() {
+    // Init
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://example.org/api/states/switch.wake_on_lan'); // Home Assistant's REST API
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: Bearer abc-secret-123...'));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    // Query
+    $result = curl_exec($ch);
+    curl_close($ch);
+    return $result;  // {..., "state": "on", "last_changed": "2022-10-14T09:17:07.277838+00:00", ...}
+}
+</code></pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4>Waking Up the Server:</h4>
+                    <p>
+                        To wake the server, we run the Perl script and hardcode the server's <a href="https://en.wikipedia.org/wiki/MAC_address" target="_blank" rel="noopener">MAC address</a> (<code>shell_exec</code> is <span class="text-danger"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;dangerous</span>, do not allow user input here).
+                        <br><i class="fa-solid fa-circle-info"></i>&nbsp;Hint: First test the <code>wakeonlan</code> Perl script on your shell, before integrating and executing it via PHP.
+                    </p>
+<pre><code class="language-php">header('Content-Type: application/json; charset=utf-8');
+
+if (!empty($_GET['act'])) {
+    // This is evil, we do not allow any user input here!
+    // https://github.com/jpoliv/wakeonlan/blob/master/wakeonlan
+    shell_exec('./wakeonlan DE:AD:BE:EF:12:34');
+    $output = json_encode(array('info' => 'Wake up signal was sent.'));
+} else {
+    $output = json_encode(array('info' => 'No wake up signal sent.'));
+}
+
+echo $output; //{"info":"Wake up signal was sent."}
+</code></pre>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Sharing is Caring</h3>
+                    <p>
+                        You can find the source code of all those scripts here:
+                        <br>
+                        <br>
+                        <a class="btn btn-outline-dark paper-button github-button" href="https://github.com/m33x/wol-plex-server" target="_blank" rel="noopener me"><i class="fab fa-github"></i> <span class="network-name">Download Scripts from GitHub</span></a>
+                        <br>
+                        <br>
+                        I hope this is helpful for some 😊.
+                        There are properly many issues with it, so please feel free to fork and improve!
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Questions and Answers:</h3>
+                    <ul>
+                        <li><b>How much energy have you saved with this already?</b><br>
+                        In 140 days about 60 Euros. The sever was sleeping 89% of the time. Without the script 140 Days * 43 Watts * 24h = 144 kWh, which accounts for 70 Euros (assuming the 49&nbsp;euro&nbsp;cent/kWh from the top).
+                        Instead, due to the script, the server slept for 125 days, and was only "idling" for about 15 days, resulting in about 27 kWh in total, which accounts for ~13 Euros.</li>
+                        <li><b>What if Time Machine starts a backup, but the server is not available because it is sleeping?</b><br>
+                        There is no solution to this "problem." You will need to manually wake the server, if it isn't running. After a couple of days without a backup, macOS will start complaining. If you know a better solution, please post it on GitHub or ping me on social media.</li>
+                        <li><b>What if I start Plex on my TV, but forgot to wake the server?</b><br>
+                        This is not an issue. Just wake the server, and after about 30 seconds Plex will show all your media and streaming content.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Just some spacing -->
+            <br>
+            <br>
+        </div><!-- end container -->
+        <script src="../../js/thirdparty/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../js/thirdparty/jquery.min.js"><\/script>')</script>
+        <script src="../../js/thirdparty/bootstrap.bundle.min.js"></script>
+        <!-- Prism.js -->
+        <script src="../../js/thirdparty/prism.js"></script>
+        <script src="../../js/custom/website.js"></script>
+    </body>
+</html>
