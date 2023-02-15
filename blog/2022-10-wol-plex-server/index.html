@@ -299,7 +299,7 @@ $info = json_decode(getStateFromHASS(), true);
 $state = $info['state'];
 $last_changed = parseDate($info['last_changed']);
 $output = json_encode(array('state' => $state, 'last_changed' => $last_changed));
-echo $output; // {"state":"off","last_changed":"2022-10-14 10:17:07"}
+echo $output; // {"state":"on","last_changed":"2022-10-14 10:17:07"}
 
 function getStateFromHASS() {
     // Init
