@@ -79,7 +79,8 @@
                         A simple solution to this problem is <b>a script that automatically suspends the server, when it is not used</b>, and another script to wake the server up again, in case there is work to do.
                         To my surprise I could not find any out-of-the-box solution, so I thought, it is a worthwhile effort to write about it.
                         <br>
-                        <i class="fa-solid fa-circle-info"></i>&nbsp;<a href="https://news.ycombinator.com/item?id=34797592" target="_blank" rel="noopener">Hello HN</a>: Because so many people asked for it, the server specs are: Intel i5-11400; ASRock B560&nbsp;Pro4; Crucial DDR4 2x&nbsp;8GB; 5x disks (1x M.2 NVMe SSD, 3x 5400&nbsp;RPM, 1x 7200&nbsp;RPM). I installed <a href="https://github.com/fenrus75/powertop" target="_blank" rel="noopener">PowerTOP&nbsp;2</a> and tuned some settings (e.g., enabled audio codec and SATA link power management) that should lower the idle consumption a bit more.
+                        <br>
+                        <i class="fa-solid fa-circle-info"></i>&nbsp;<a href="https://news.ycombinator.com/item?id=34797592" target="_blank" rel="noopener">Hello HN</a>: Because so many people asked for it, the server specs are: Intel i5-11400; ASRock B560&nbsp;Pro4; Crucial DDR4 2x&nbsp;8GB; 5x disks (1x M.2 NVMe SSD, 3x 5400&nbsp;RPM, 1x 7200&nbsp;RPM). I update the UEFI and activated <a href="https://en.wikipedia.org/wiki/Active_State_Power_Management" target="_blank" rel="noopener">Active-State Power Management (ASPM)</a>, then I installed <a href="https://github.com/fenrus75/powertop" target="_blank" rel="noopener">PowerTOP&nbsp;2</a> and tuned some settings (e.g., enabled audio codec and SATA link power management). This way I reduced the consumption to 39 watts in idle and only <mark>2 watts during sleep</mark>. I also decided to install <a href="https://github.com/adelolmo/hd-idle/releases" target="_blank" rel="noopener">hd-idle</a>, a software that suspends the hard disks after 5 minutes of inactivity, which reduced the power consumption from 39 to just <mark>23 watts during idle</mark>.
                     </p>
                 </div>
             </div>
@@ -266,7 +267,7 @@ Will check again in 60 seconds...</code></pre>
                     <h4>The Web Interface</h4>
                     <p>
                         We create a <a href="https://getbootstrap.com" target="_blank" rel="noopener">mobile-friendly website</a> that queries and displays the current server status using the <a href="https://developers.home-assistant.io/docs/api/rest/" target="_blank" rel="noopener">Home Assistant REST API</a>.
-                        It also offers a button that sends a <a href="https://en.wikipedia.org/wiki/Wake-on-LAN#Magic_packet" target="_blank" rel="noopener">magic packet</a> using a <a href="https://github.com/jpoliv/wakeonlan" target="_blank" rel="noopener">wakeonlan Perl script</a>.
+                        It also offers a button that sends a <a href="https://en.wikipedia.org/wiki/Wake-on-LAN#Magic_packet" target="_blank" rel="noopener">magic packet</a> using a <a href="https://github.com/jpoliv/wakeonlan" target="_blank" rel="noopener">wakeonlan Perl script</a> (<a href="https://github.com/remcohaszing/pywakeonlan" target="_blank" rel="noopener">Python 3 version</a>).
                         Currently, there is no authentication in place.
                         If you feel the need, it should be super easy to add <a href="https://www.howtogeek.com/devops/how-to-setup-basic-http-authentication-on-apache/" target="_blank" rel="noopener">HTTP Basic Authentication</a> by tweaking the configuration of your Web server.
                         <br>
@@ -337,6 +338,23 @@ echo $output; //{"info":"Wake up signal was sent."}
 </code></pre>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4>Configuring Time Machine:</h4>
+                    <p>Wake on LAN (WoL) only works when you use the <mark>hostname of the server, not its IP address</mark>. This way, macOS will automatically send a magic packet every time it starts a backup, which will wake the server. Big thanks to <a href="https://news.ycombinator.com/item?id=34798952" target="_blank" rel="noopener">@jessikat</a> for this hint.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <picture>
+                        <source sizes="768vw" srcset="img/timemachine-320-q85.webp 320w, img/timemachine-480-q85.webp 480w, img/timemachine-768-q85.webp 768w, img/timemachine-1024-q85.webp 1024w, img/timemachine-1400-q85.webp 1280w" type="image/webp">
+                        <source sizes="768vw" srcset="img/timemachine-320-q85.jpg 320w, img/timemachine-480-q85.jpg 480w, img/timemachine-768-q85.jpg 768w, img/timemachine-1024-q85.jpg 1024w, img/timemachine-1400-q85.jpg 1280w" type="image/jpeg">
+                        <img src="img/timemachine-1024-q85.jpg" width="1024" height="497" alt="Use the Hostname Not the IP Address for Time Machine Backups to Enable Wake on LAN (WoL)" class="img-fluid rounded float-right zoom">
+                    </picture>
+                    <br>
+                    <br>
+                </div>
+            </div>
             <hr>
             <div class="row">
                 <div class="col-12">
@@ -362,7 +380,7 @@ echo $output; //{"info":"Wake up signal was sent."}
                         In 140 days about 60 Euros. The sever was sleeping 89% of the time. Without the script 140 Days * 43 Watts * 24h = 144 kWh, which accounts for 70 Euros (assuming the 49&nbsp;euro&nbsp;cent/kWh from the top).
                         Instead, due to the script, the server slept for 125 days, and was only "idling" for about 15 days, resulting in about 27 kWh in total, which accounts for ~13 Euros.</li>
                         <li><b>What if Time Machine starts a backup, but the server is not available because it is sleeping?</b><br>
-                        There is no solution to this "problem." You will need to manually wake the server, if it isn't running. After a couple of days without a backup, macOS will start complaining. If you know a better solution, please post it on GitHub or ping me on social media.</li>
+                        There is an easy solution for this. Just make sure that you use the hostname of the server, not its IP address. This way, macOS will automatically send a magic packet every time it starts a backup. Big thanks to <a href="https://news.ycombinator.com/item?id=34798952" target="_blank" rel="noopener">@jessikat</a> for this hint.</li>
                         <li><b>What if I start Plex on my TV, but forgot to wake the server?</b><br>
                         This is not an issue. Just wake the server, and after about 30 seconds Plex will show all your media and streaming content.</li>
                     </ul>
