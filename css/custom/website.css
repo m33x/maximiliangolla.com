@@ -85,6 +85,10 @@ body > .container {
 .paper-button {
     margin-top: 0.25rem;
 }
+.cispa-button:hover {
+    color: #fff;
+    background-color: #018dca;
+}
 .mpi-button:hover {
     color: #fff;
     background-color: #006c66;
@@ -92,6 +96,10 @@ body > .container {
 .rub-button:hover {
     color: #fff;
     background-color:#17365c;
+}
+.uds-button:hover {
+    color: #fff;
+    background-color:#10427a;
 }
 .twitter-button:hover {
     color: #fff;
@@ -184,6 +192,13 @@ body > .container {
 .headline {
     text-transform: uppercase;
     color: #343a40;
+}
+
+.hiringtext {
+    font-size: 1.2rem;
+    color: #fff;
+    background: #00000075;
+    border-radius: 10px;
 }
 
 /* Conference label on paper photo */

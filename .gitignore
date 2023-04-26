@@ -3,7 +3,9 @@
 *.py
 img/talks/raw/*
 img/projects/raw/*
-img/papers/*
+img/hiring/raw/*
+img/interests/raw/*
 blog/*/raw/*
+img/papers/*
 papers/*
 dev/*
