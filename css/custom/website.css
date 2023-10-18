@@ -113,6 +113,10 @@ body > .container {
     color: #fff;
     background-color: #1166c2;
 }
+.bluesky-button:hover {
+    color: #fff;
+    background-color: #1b85ff;
+}
 .slack-button:hover {
     color: #fff;
     background-color: #511851;
