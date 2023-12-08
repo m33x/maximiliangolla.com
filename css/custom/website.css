@@ -157,6 +157,10 @@ body > .container {
     color: #fff;
     background-color: #000;
 }
+.usenix-button:hover {
+    color: #fff;
+    background-color: #d02039;
+}
 .research-gate-button:hover {
     color: #fff;
     background-color: #10aea1;
