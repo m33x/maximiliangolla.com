@@ -165,6 +165,14 @@ body > .container {
     color: #fff;
     background-color: #10aea1;
 }
+.semantic-scholar-button:hover {
+    color: #fff;
+    background-color: #1f3c73;
+}
+.web-of-science-button:hover {
+    color: #fff;
+    background-color: #5d33bf;
+}
 
 .card-text {
     padding: 0.25rem 0.25rem 0.25rem 0.25rem;
