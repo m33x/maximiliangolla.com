@@ -117,6 +117,10 @@ body > .container {
     color: #fff;
     background-color: #1b85ff;
 }
+.signal-button:hover {
+    color: #fff;
+    background-color: #3a76f0;
+}
 .slack-button:hover {
     color: #fff;
     background-color: #511851;
