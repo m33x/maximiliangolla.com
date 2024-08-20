@@ -109,6 +109,10 @@ body > .container {
     color: #fff;
     background-color: #8c8dff;
 }
+.matrix-button:hover {
+    color: #fff;
+    background-color: #000;
+}
 .linkedin-button:hover {
     color: #fff;
     background-color: #1166c2;
