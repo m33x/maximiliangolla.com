@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://maximiliangolla.com/</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/index.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/research.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/publications.html</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/talks.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/news.html</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/hiring.html</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/projects.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/blog/index.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/legal.html</loc>
+  <priority>0.10</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/privacy.html</loc>
+  <priority>0.10</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/blog/2022-10-wol-plex-server/</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/blog/2022-10-wol-plex-server/index.html</loc>
+  <priority>0.64</priority>
+</url>
+
+</urlset>

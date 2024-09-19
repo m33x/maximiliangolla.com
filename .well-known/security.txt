@@ -1,0 +1,9 @@
+Contact: mailto:golla@cispa.de
+Contact: tel:+49 681 87083 2456
+Contact: https://maximiliangolla.com
+Expires: 2029-12-31T22:59:00.000Z
+Encryption: https://github.com/m33x.gpg
+Preferred-Languages: en, de
+Canonical: https://maximiliangolla.com/.well-known/security.txt
+Hiring: https://maximiliangolla.com/hiring.html
+
