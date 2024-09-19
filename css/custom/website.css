@@ -117,10 +117,6 @@ body > .container {
     color: #fff;
     background-color: #1166c2;
 }
-.bluesky-button:hover {
-    color: #fff;
-    background-color: #1b85ff;
-}
 .signal-button:hover {
     color: #fff;
     background-color: #3a76f0;
