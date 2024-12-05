@@ -95,15 +95,15 @@ body > .container {
 }
 .rub-button:hover {
     color: #fff;
-    background-color:#17365c;
+    background-color: #17365c;
 }
 .uds-button:hover {
     color: #fff;
-    background-color:#10427a;
+    background-color: #10427a;
 }
-.twitter-button:hover {
+.bluesky-button:hover {
     color: #fff;
-    background-color: #1da1f2;
+    background-color: #1083fe;
 }
 .mastodon-button:hover {
     color: #fff;
