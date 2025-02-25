@@ -57,7 +57,7 @@
             <hr>
             <h2 id="projects" class="headline"><i class="fas fa-project-diagram"></i> Projects &amp; Software</h2>
             Below, you can find a list of cool projects I created or have been involved with.<br>
-            <span class="text-muted list-item-unstyled" style="font-size: 0.8rem;">Last update: February 2023</span>
+            <span class="text-muted list-item-unstyled" style="font-size: 0.8rem;">Last update: February 2025</span>
             <hr>
             <div class="row">
                 <div class="col-12">
@@ -75,14 +75,15 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <span class="badge bg-secondary">January 2022</span><br>
-                            <a href="https://twitter.com/m33x/status/1478158968480575489" target="_blank" rel="noopener">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#heatpumpModal">
                                 <picture>
                                     <source sizes="512vw" srcset="img/projects/2022-java-reversing-heatpump-320-q85.webp 320w, img/projects/2022-java-reversing-heatpump-480-q85.webp 480w, img/projects/2022-java-reversing-heatpump-768-q85.webp 768w, img/projects/2022-java-reversing-heatpump-1024-q85.webp 1024w, img/projects/2022-java-reversing-heatpump-1400-q85.webp 1280w" type="image/webp">
                                     <source sizes="512vw" srcset="img/projects/2022-java-reversing-heatpump-320-q85.jpg 320w, img/projects/2022-java-reversing-heatpump-480-q85.jpg 480w, img/projects/2022-java-reversing-heatpump-768-q85.jpg 768w, img/projects/2022-java-reversing-heatpump-1024-q85.jpg 1024w, img/projects/2022-java-reversing-heatpump-1400-q85.jpg 1280w" type="image/jpeg">
-                                    <img src="img/projects/2022-java-reversing-heatpump-640-q85.jpg" width="640" height="480" loading="lazy" alt="Mitigating Users' Misconceptions About FIDO2 Biometric WebAuthn" class="img-fluid img-thumbnail zoom">
+                                    <img src="img/projects/2022-java-reversing-heatpump-640-q85.jpg" width="640" height="480" loading="lazy" alt="Migrating a Siemens NOVELAN Heatpump Java Applet to Home Assistant" class="img-fluid img-thumbnail zoom">
                                 </picture>
                             </a>
-                            <a href="https://twitter.com/m33x/status/1478158968480575489" target="_blank" rel="noopener">Migrating a Siemens NOVELAN Heatpump Java Applet to Home Assistant</a>
+                            <!-- https://twitter.com/m33x/status/1478158968480575489 -->
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#heatpumpModal">Migrating a Siemens NOVELAN Heatpump Java Applet to Home Assistant</a>
                         </div>
                         <div class="col-12 col-sm-4">
                             <span class="badge bg-secondary">June 2021</span><br>
@@ -369,6 +370,113 @@
             <br>
             <br>
         </div><!-- end container -->
+        <!-- Start Modal: Heatpump -->
+        <div class="modal fade" id="heatpumpModal" tabindex="-1" aria-labelledby="heatpumpModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="heatpumpModalLabel"><i class="fa-brands fa-twitter"></i> Twitter Thread (Archive)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="h6">Maximilian Golla <i class="fa-solid fa-circle-check text-dark"></i> <small class="text-muted">(@m33x) &bull; Jan. 4, 2022</small></p>
+                        <p>
+                            A friend owns a heat pump. It reports sensor readings via a web interface. The problem? It's a Java applet 💩 and worse, it only supports Java 7 (seriously, FML). It was installed in 2010, and never received an update (I checked, there is none). So I installed Java 7 and FF 51.
+                        </p>
+                        <img src="img/projects/twitter/heatpump_01.jpg" class="img-fluid" alt="Screenshot of a Java applet displaying heatpump sensor readings.">
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="float-start" style="margin-bottom: 0rem;">
+                                    <small class="text-muted">
+                                        <i class="fa-regular fa-comment"></i> &nbsp;
+                                        <span class="text-primary"><i class="fa-solid fa-retweet"></i> 3</span> &nbsp;
+                                        <span class="text-danger"><i class="fa-solid fa-heart"></i> 21</span>
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <p class="float-end" style="margin-bottom: 0rem;">
+                                    <small class="text-muted"><a href="https://twitter.com/m33x/status/1478158968480575489" class="text-decoration-none text-secondary" target="_blank" rel="noopener">1478158968480575489</a></small>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="h6">Maximilian Golla <i class="fa-solid fa-circle-check text-dark"></i> <small class="text-muted">(@m33x) &bull; Jan. 4, 2022</small></p>
+                        <p>
+                            Next, we download and decompile the applet using JD-GUI. Known form other IoT devices (cc: <span class="text-success">@internetofshit</span>) the applet authenticates the user locally, there is no backend involved (so we can skip auth completely) 🤦 The applet connects to the heat pump using a TCP socket.
+                        </p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="float-start" style="margin-bottom: 0rem;">
+                                    <small class="text-muted">
+                                        <i class="fa-regular fa-comment"></i> &nbsp;
+                                        <span class="text-primary"><i class="fa-solid fa-retweet"></i> 0</span> &nbsp;
+                                        <span class="text-danger"><i class="fa-solid fa-heart"></i> 7</span>
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <p class="float-end" style="margin-bottom: 0rem;">
+                                    <small class="text-muted"><a href="https://twitter.com/m33x/status/1478158970787405827" class="text-decoration-none text-secondary" target="_blank" rel="noopener">1478158970787405827</a></small>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="h6">Maximilian Golla <i class="fa-solid fa-circle-check text-dark"></i> <small class="text-muted">(@m33x) &bull; Jan. 4, 2022</small></p>
+                        <p>
+                            Next, we waste 4h to remind ourselves that Java uses big-endianness 😅 and that you are sending the correct value but in the wrong order, you idiot! 😬 Meanwhile we have some fun with the hardcoded secrets 😂, and we waste hours to figure out which value represents which sensor.
+                        </p>
+                        <img src="img/projects/twitter/heatpump_02.jpg" class="img-fluid" alt="Screenshot of Java source code.">
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="float-start" style="margin-bottom: 0rem;">
+                                    <small class="text-muted">
+                                        <i class="fa-regular fa-comment"></i> &nbsp;
+                                        <span class="text-primary"><i class="fa-solid fa-retweet"></i> 0</span> &nbsp;
+                                        <span class="text-danger"><i class="fa-solid fa-heart"></i> 10</span>
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <p class="float-end" style="margin-bottom: 0rem;">
+                                    <small class="text-muted"><a href="https://twitter.com/m33x/status/1478158978442010624" class="text-decoration-none text-secondary" target="_blank" rel="noopener">1478158978442010624</a></small>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="h6">Maximilian Golla <i class="fa-solid fa-circle-check text-dark"></i> <small class="text-muted">(@m33x) &bull; Jan. 4, 2022</small></p>
+                        <p>
+                            Finally, we integrate everything into <span class="text-primary">#HomeAssistant</span> using a command_line sensor that updates every 60 seconds. Now my friend can enjoy all important heat pump sensor readings on his phone and can finally uninstall Java 🥳
+                        </p>
+                        <img src="img/projects/twitter/heatpump_03.jpg" class="img-fluid" alt="Screenshot of a Home Assistant web interface.">
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="float-start" style="margin-bottom: 0rem;">
+                                    <small class="text-muted">
+                                        <i class="fa-regular fa-comment"></i> &nbsp;
+                                        <span class="text-primary"><i class="fa-solid fa-retweet"></i> 1</span> &nbsp;
+                                        <span class="text-danger"><i class="fa-solid fa-heart"></i> 30</span>
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <p class="float-end" style="margin-bottom: 0rem;">
+                                    <small class="text-muted"><a href="https://twitter.com/m33x/status/1478158986155372545" class="text-decoration-none text-secondary"target="_blank" rel="noopener">1478158986155372545</a></small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal: PhD Student -->
         <script src="js/thirdparty/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/thirdparty/jquery.min.js"><\/script>')</script>
         <script src="js/thirdparty/bootstrap.bundle.min.js"></script>
