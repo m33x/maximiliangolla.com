@@ -177,6 +177,14 @@ body > .container {
     color: #fff;
     background-color: #5d33bf;
 }
+.arxiv-button:hover {
+    color: #fff;
+    background-color: #b31b1b;
+}
+.dimensions-button:hover {
+    color: #fff;
+    background-color: #40bbea;
+}
 
 .card-text {
     padding: 0.25rem 0.25rem 0.25rem 0.25rem;
