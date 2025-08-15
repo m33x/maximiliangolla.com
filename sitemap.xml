@@ -10,10 +10,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maximiliangolla.com/research.html</loc>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://maximiliangolla.com/publications.html</loc>
   <priority>1.00</priority>
 </url>
@@ -22,11 +18,11 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maximiliangolla.com/news.html</loc>
-  <priority>1.00</priority>
+  <loc>https://maximiliangolla.com/service.html</loc>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maximiliangolla.com/hiring.html</loc>
+  <loc>https://maximiliangolla.com/news.html</loc>
   <priority>1.00</priority>
 </url>
 <url>
@@ -36,6 +32,10 @@
 <url>
   <loc>https://maximiliangolla.com/blog/index.html</loc>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maximiliangolla.com/hiring.html</loc>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://maximiliangolla.com/legal.html</loc>
