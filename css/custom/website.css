@@ -101,10 +101,6 @@ body > .container {
     color: #fff;
     background-color: #10427a;
 }
-.bluesky-button:hover {
-    color: #fff;
-    background-color: #1083fe;
-}
 .mastodon-button:hover {
     color: #fff;
     background-color: #8c8dff;
