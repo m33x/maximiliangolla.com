@@ -1,6 +1,7 @@
 *.psd
 *.sh
 *.py
+img/new/*
 img/talks/raw/*
 img/projects/raw/*
 img/hiring/raw/*
