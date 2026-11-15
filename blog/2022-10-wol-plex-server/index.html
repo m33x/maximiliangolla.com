@@ -71,12 +71,12 @@
                     </div>
                     <h2 class="h3">43 Watts Is Just Too Much!</h2>
                     <p>
-                        It does not sound like much, but running a 24/7 home server that draws <mark>43 watts in idle is quiet expensive</mark>, considering the latest electricity prices of about 49&nbsp;euro&nbsp;cent/kWh here in Germany (as of October, 2022).
+                        It does not sound like much, but running a 24/7 home server that draws <mark>43 watts in idle is quite expensive</mark>, considering the latest electricity prices of about 49&nbsp;euro&nbsp;cent/kWh here in Germany (as of October, 2022).
                         A simple solution to this problem is <b>a script that automatically suspends the server, when it is not used</b>, and another script to wake the server up again, in case there is work to do.
                         To my surprise I could not find any out-of-the-box solution, so I thought, it is a worthwhile effort to write about it.
                         <br>
                         <br>
-                        <i class="fa-solid fa-circle-info"></i>&nbsp;<a href="https://news.ycombinator.com/item?id=34797592" target="_blank" rel="noopener">Hello HN</a>: Because so many people asked for it, the server specs are: Intel i5-11400; ASRock B560&nbsp;Pro4; Crucial DDR4 2x&nbsp;8GB; 5x disks (1x M.2 NVMe SSD, 3x 5400&nbsp;RPM, 1x 7200&nbsp;RPM). I update the UEFI and activated <a href="https://en.wikipedia.org/wiki/Active_State_Power_Management" target="_blank" rel="noopener">Active-State Power Management (ASPM)</a>, then I installed <a href="https://github.com/fenrus75/powertop" target="_blank" rel="noopener">PowerTOP&nbsp;2</a> and tuned some settings (e.g., enabled audio codec and SATA link power management). This way I reduced the consumption to 39 watts in idle and only <mark>2 watts during sleep</mark>. I also decided to install <a href="https://github.com/adelolmo/hd-idle/releases" target="_blank" rel="noopener">hd-idle</a>, a software that suspends the hard disks after 5 minutes of inactivity, which reduced the power consumption from 39 to just <mark>23 watts during idle</mark>.
+                        <i class="fa-solid fa-circle-info"></i>&nbsp;<a href="https://news.ycombinator.com/item?id=34797592" target="_blank" rel="noopener">Hello HN</a>: Because so many people asked for it, the server specs are: Intel i5-11400; ASRock B560&nbsp;Pro4; Crucial DDR4 2x&nbsp;8GB; 5x disks (1x M.2 NVMe SSD, 3x 5400&nbsp;RPM, 1x 7200&nbsp;RPM). I updated the UEFI and activated <a href="https://en.wikipedia.org/wiki/Active_State_Power_Management" target="_blank" rel="noopener">Active-State Power Management (ASPM)</a>, then I installed <a href="https://github.com/fenrus75/powertop" target="_blank" rel="noopener">PowerTOP&nbsp;2</a> and tuned some settings (e.g., enabled audio codec and SATA link power management). This way I reduced the consumption to 39 watts in idle and only <mark>2 watts during sleep</mark>. I also decided to install <a href="https://github.com/adelolmo/hd-idle/releases" target="_blank" rel="noopener">hd-idle</a>, software that suspends the hard disks after 5 minutes of inactivity, which reduced the power consumption from 39 to just <mark>23 watts during idle</mark>.
                     </p>
                 </div>
             </div>
@@ -94,7 +94,7 @@
             <div class="row">
                 <div class="col-12">
                     <p class>
-                        <i class="fa-solid fa-circle-question"></i>&nbsp;By the way: Why aren't there any good solutions out there? Why isn't this build into every major operating system by now? <b>Why isn't this the default</b> (or at least a configuration option)? Seriously, there is soooo much potential to save energy in IT.
+                        <i class="fa-solid fa-circle-question"></i>&nbsp;By the way: Why aren't there any good solutions out there? Why isn't this built into every major operating system by now? <b>Why isn't this the default</b> (or at least a configuration option)? Seriously, there is soooo much potential to save energy in IT.
                     </p>
                 </div>
             </div>
@@ -114,11 +114,11 @@
                     </p>
                     <ol type="I">
                         <li>A script that suspends the server automatically, in case the server is not used</li>
-                        <li>A (mobile friendly) website that allows to wake up the server, in case I need it</li>
+                        <li>A (mobile-friendly) website that allows me to wake up the server, in case I need it</li>
                     </ol>
                     <p>
                         Finally, I do have a <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank" rel="noopener">Raspberry Pi 4 Model B 4GB</a> at home that is running all the time.
-                        This Pi is used for hosting <a href="https://www.home-assistant.io" target="_blank" rel="noopener">Home Assistant</a> (HASS) and <a href="https://pi-hole.net" target="_blank" rel="noopener">Pi-hole</a> and it could become very handy for monitoring the sleep state of the server and hosting the wake up website.
+                        This Pi is used for hosting <a href="https://www.home-assistant.io" target="_blank" rel="noopener">Home Assistant</a> (HASS) and <a href="https://pi-hole.net" target="_blank" rel="noopener">Pi-hole</a> and it could come in very handy for monitoring the sleep state of the server and hosting the wake up website.
                     </p>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                     <p>
                         The high-level idea that came to my mind looks similar to this:
                         Macs in my local network access the server via <a href="https://en.wikipedia.org/wiki/Server_Message_Block" target="_blank" rel="noopener">SMB</a> for Time Machine backups.
-                        From remote, I access Plex via <a href="https://support.plex.tv/articles/200289506-remote-access/" target="_blank" rel="noopener">HTTPS</a> for streaming.
+                        Remotely, I access Plex via <a href="https://support.plex.tv/articles/200289506-remote-access/" target="_blank" rel="noopener">HTTPS</a> for streaming.
                         In case the server sleeps, I need a convenient solution to wake the server remotely via my smartphone.
                         The Raspberry Pi is running 24/7 and already hosts Home Assistant that offers a <a href="https://www.home-assistant.io/integrations/wake_on_lan/" target="_blank" rel="noopener">Wake on LAN</a> and <a href="https://www.home-assistant.io/integrations/fritz/" target="_blank" rel="noopener">Device tracker</a> integration.
                     </p>
@@ -154,7 +154,7 @@
                         To monitor Plex activities, we access the <a href="https://support.plex.tv/articles/201638786-plex-media-server-url-commands/" target="_blank" rel="noopener">local Plex API</a> and for Time Machine we simply monitor any file access at <code>/mnt</code> using <a href="https://en.wikipedia.org/wiki/Lsof" target="_blank" rel="noopener">lsof</a>.
                         In case there has been no activity for 15 consecutive minutes, the server goes to sleep. (Nobody streams, pausing a video doesn't count as activity, and no backup is running.)
                         A Web server on the Raspberry Pi hosts a website that obtains the current state of the server provided via the <a href="https://developers.home-assistant.io/docs/api/rest/" target="_blank" rel="noopener">Home Assistant REST API</a>.
-                        In case the server sleeps, and I like to backup or stream something, I can wake the server using a simple button press that sends a <a href="https://en.wikipedia.org/wiki/Wake-on-LAN#Magic_packet" target="_blank" rel="noopener">magic packet</a> using a <a href="https://github.com/jpoliv/wakeonlan" target="_blank" rel="noopener">wakeonlan Perl script</a>.
+                        In case the server sleeps, and I would like to back up or stream something, I can wake the server using a simple button press that sends a <a href="https://en.wikipedia.org/wiki/Wake-on-LAN#Magic_packet" target="_blank" rel="noopener">magic packet</a> using a <a href="https://github.com/jpoliv/wakeonlan" target="_blank" rel="noopener">wakeonlan Perl script</a>.
                     </p>
                 </div>
             </div>
@@ -267,7 +267,7 @@ Will check again in 60 seconds...</code></pre>
                         Currently, there is no authentication in place.
                         If you feel the need, it should be super easy to add <a href="https://www.howtogeek.com/devops/how-to-setup-basic-http-authentication-on-apache/" target="_blank" rel="noopener">HTTP Basic Authentication</a> by tweaking the configuration of your Web server.
                         <br>
-                        <i class="fa-solid fa-circle-info"></i>&nbsp;Note: The Home Assistant <a href="https://www.home-assistant.io/integrations/wake_on_lan/" target="_blank" rel="noopener">Wake on LAN</a> integration also allows to wake the machine, but I explicitly opted for this Perl script-setup, because it enables me to wake the server even in the case Home Assistant is down or currently unavailable.
+                        <i class="fa-solid fa-circle-info"></i>&nbsp;Note: The Home Assistant <a href="https://www.home-assistant.io/integrations/wake_on_lan/" target="_blank" rel="noopener">Wake on LAN</a> integration also allows you to wake the machine, but I explicitly opted for this Perl script-setup, because it enables me to wake the server even in the case Home Assistant is down or currently unavailable.
                     </p>
                 </div>
             </div>
@@ -363,7 +363,7 @@ echo $output; //{"info":"Wake up signal was sent."}
                         <br>
                         <br>
                         I hope this is helpful for some 😊.
-                        There are properly many issues with it, so please feel free to fork and improve!
+                        There are probably many issues with it, so please feel free to fork and improve!
                     </p>
                 </div>
             </div>
@@ -373,7 +373,7 @@ echo $output; //{"info":"Wake up signal was sent."}
                     <h2 class="h3">Questions and Answers:</h2>
                     <ul>
                         <li><b>How much energy have you saved with this already?</b><br>
-                        In 140 days about 60 Euros. The sever was sleeping 89% of the time. Without the script 140 Days * 43 Watts * 24h = 144 kWh, which accounts for 70 Euros (assuming the 49&nbsp;euro&nbsp;cent/kWh from the top).
+                        In 140 days about 60 Euros. The server was sleeping 89% of the time. Without the script 140 Days * 43 Watts * 24h = 144 kWh, which accounts for 70 Euros (assuming the 49&nbsp;euro&nbsp;cent/kWh from the top).
                         Instead, due to the script, the server slept for 125 days, and was only "idling" for about 15 days, resulting in about 27 kWh in total, which accounts for ~13 Euros.</li>
                         <li><b>What if Time Machine starts a backup, but the server is not available because it is sleeping?</b><br>
                         There is an easy solution for this. Just make sure that you use the hostname of the server, not its IP address. This way, macOS will automatically send a magic packet every time it starts a backup. Big thanks to <a href="https://news.ycombinator.com/item?id=34798952" target="_blank" rel="noopener">@jessikat</a> for this hint.</li>
