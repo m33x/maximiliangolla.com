@@ -50,15 +50,15 @@
                         <li class="nav-item"><a class="nav-link" href="../../hiring.html">Join MaxLab</a></li>
                     </ul>
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link text-muted" role="button" href="../../legal.html">Legal Notice</a></li>
-                        <li class="nav-item"><a class="nav-link text-muted" role="button" href="../../privacy.html">Privacy</a></li>
+                        <li class="nav-item"><a class="nav-link text-muted" href="../../legal.html">Legal Notice</a></li>
+                        <li class="nav-item"><a class="nav-link text-muted" href="../../privacy.html">Privacy</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container">
+        <main class="container">
             <hr>
-            <h2 id="press" class="headline"><i class="fa-solid fa-blog"></i> Saving Energy: Home Server That Automatically Suspends to RAM and Wakes Up Again</h2>
+            <h1 id="press" class="h2 headline"><i class="fa-solid fa-blog"></i> Saving Energy: Home Server That Automatically Suspends to RAM and Wakes Up Again</h1>
             ... which is used for Plex media streaming and Time Machine backups.<br>
             <span class="text-muted list-item-unstyled" style="font-size: 1rem;"><b>Last update</b>: March 2023</span><br>
             <span class="text-muted list-item-unstyled" style="font-size: 1rem;"><b>Author</b>: <a class="text-decoration-none text-muted" href="../../index.html">Maximilian Golla</a></span><br>
@@ -69,7 +69,7 @@
                     <div class="alert alert-warning text-center" role="alert">
                         <i class="fa-solid fa-triangle-exclamation"></i> This blog post is <strong>not intended as a step-by-step guide</strong>. You will need to figure it out yourself, but I uploaded the entire project to GitHub.
                     </div>
-                    <h3>43 Watts Is Just Too Much!</h3>
+                    <h2 class="h3">43 Watts Is Just Too Much!</h2>
                     <p>
                         It does not sound like much, but running a 24/7 home server that draws <mark>43 watts in idle is quiet expensive</mark>, considering the latest electricity prices of about 49&nbsp;euro&nbsp;cent/kWh here in Germany (as of October, 2022).
                         A simple solution to this problem is <b>a script that automatically suspends the server, when it is not used</b>, and another script to wake the server up again, in case there is work to do.
@@ -100,7 +100,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h3>Requirements & Specification</h3>
+                    <h2 class="h3">Requirements & Specification</h2>
                     <p>
                         Currently, the server is primarily used for two things:
                     </p>
@@ -124,7 +124,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h3>The Idea</h3>
+                    <h2 class="h3">The Idea</h2>
                     <p>
                         The high-level idea that came to my mind looks similar to this:
                         Macs in my local network access the server via <a href="https://en.wikipedia.org/wiki/Server_Message_Block" target="_blank" rel="noopener">SMB</a> for Time Machine backups.
@@ -147,7 +147,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h3>The Implementation (on the Shoulders of Giants)</h3>
+                    <h2 class="h3">The Implementation (on the Shoulders of Giants)</h2>
                     <p>
                         Fast forward a number of weeks testing various options, my setup currently looks like this:
                         The server implements a <a href="https://en.wikipedia.org/wiki/Circular_buffer" target="_blank" rel="noopener">ring buffer</a> and checks for activities once per minute.
@@ -172,9 +172,9 @@
             <hr>
             <div class="row">
                 <div class="col-12">
-                    <h3>How to Sleep (And When Better Not)</h3>
+                    <h2 class="h3">How to Sleep (And When Better Not)</h2>
 
-                    <h4>Monitoring Backups:</h4>
+                    <h3 class="h4">Monitoring Backups:</h3>
                     <p>My backup disk is mounted under <code>/mnt/backup</code>. We monitor whether there is any file access on <code>/mnt</code>.</p>
 <pre><code class="language-python">def is_someone_accessing_files_check():
     try:
@@ -185,7 +185,7 @@
         return True
     except Exception:
         return True</code></pre>
-                    <h4>Monitoring Plex:</h4>
+                    <h3 class="h4">Monitoring Plex:</h3>
                     <p>There are many possible solutions to this problem. The most reliable was to use the <a href="https://support.plex.tv/articles/201638786-plex-media-server-url-commands/" target="_blank" rel="noopener">local Plex API</a>.
                         In contrast to simpler solutions this comes with the advantage that we can differentiate between <b>active playbacks</b> and <mark>people that paused the streaming</mark> (but still have the browser tab open, usually preventing the server from sleeping 😈).
                         You can find your <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/" target="_blank" rel="noopener">account authentication token for Plex here</a>.</p>
@@ -230,7 +230,7 @@ def is_someone_streaming_check():
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h4>Putting It All Together:</h4>
+                    <h3 class="h4">Putting It All Together:</h3>
                     <p>
                         The script runs once per minute and suspends the server after 15 consecutive minutes without any activity by calling <code>/usr/sbin/pm-suspend</code>.
                         To avoid the need to run the script as root, consider adding <span style="font-family:monospace;">my_user ALL=NOPASSWD:/usr/sbin/pm-suspend</span> to your <code>/etc/sudoers</code> file (then execute <code>sudo pm-suspend</code>).
@@ -250,8 +250,8 @@ Will check again in 60 seconds...</code></pre>
             <hr>
             <div class="row">
                 <div class="col-12">
-                    <h3>How to Wake Up Again</h3>
-                    <h4>Enable Wake on LAN (WoL):</h4>
+                    <h2 class="h3">How to Wake Up Again</h2>
+                    <h3 class="h4">Enable Wake on LAN (WoL):</h3>
                     <p>
                         There are <a href="https://necromuralist.github.io/posts/enabling-wake-on-lan/" target="_blank" rel="noopener">many tutorials out there</a>.
                         Check your <a href="https://www.asrock.com/support/faq.asp?k=wake+on+lan" target="_blank" rel="noopener">BIOS/UEFI</a> first, then install <code>ethtool</code>, and configure a <code>wol.service</code> that re-enables WoL every time you reboot the machine.
@@ -260,7 +260,7 @@ Will check again in 60 seconds...</code></pre>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h4>The Web Interface</h4>
+                    <h3 class="h4">The Web Interface</h3>
                     <p>
                         We create a <a href="https://getbootstrap.com" target="_blank" rel="noopener">mobile-friendly website</a> that queries and displays the current server status using the <a href="https://developers.home-assistant.io/docs/api/rest/" target="_blank" rel="noopener">Home Assistant REST API</a>.
                         It also offers a button that sends a <a href="https://en.wikipedia.org/wiki/Wake-on-LAN#Magic_packet" target="_blank" rel="noopener">magic packet</a> using a <a href="https://github.com/jpoliv/wakeonlan" target="_blank" rel="noopener">wakeonlan Perl script</a> (<a href="https://github.com/remcohaszing/pywakeonlan" target="_blank" rel="noopener">Python 3 version</a>).
@@ -285,7 +285,7 @@ Will check again in 60 seconds...</code></pre>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h4>Querying Home Assistant:</h4>
+                    <h3 class="h4">Querying Home Assistant:</h3>
                     <p>
                         OMG, PHP! Yes, I know. 🤦 After installing and configuring the Home Assistant <a href="https://www.home-assistant.io/integrations/wake_on_lan/" target="_blank" rel="noopener">Wake on LAN</a> integration, we can query the <a href="https://developers.home-assistant.io/docs/api/rest/" target="_blank" rel="noopener">Home Assistant REST API</a>.
                         For authentication, you need a <a href="https://developers.home-assistant.io/docs/auth_api/#long-lived-access-token" target="_blank" rel="noopener">Long-Lived Access Token</a> (valid for 10 years) that you can generate <b>in your user profile</b> (<code>https://example.org/profile</code>).
@@ -314,7 +314,7 @@ function getStateFromHASS() {
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h4>Waking Up the Server:</h4>
+                    <h3 class="h4">Waking Up the Server:</h3>
                     <p>
                         To wake the server, we run the Perl script and hardcode the server's <a href="https://en.wikipedia.org/wiki/MAC_address" target="_blank" rel="noopener">MAC address</a> (<code>shell_exec</code> is <span class="text-danger"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;dangerous</span>, do not allow user input here).
                         <br><i class="fa-solid fa-circle-info"></i>&nbsp;Hint: First test the <code>wakeonlan</code> Perl script on your shell, before integrating and executing it via PHP.
@@ -336,7 +336,7 @@ echo $output; //{"info":"Wake up signal was sent."}
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h4>Configuring Time Machine:</h4>
+                    <h3 class="h4">Configuring Time Machine:</h3>
                     <p>Wake on LAN (WoL) only works when you use the <mark>hostname of the server, not its IP address</mark>. This way, macOS will automatically send a magic packet every time it starts a backup, which will wake the server. Big thanks to <a href="https://news.ycombinator.com/item?id=34798952" target="_blank" rel="noopener">@jessikat</a> for this hint.</p>
                 </div>
             </div>
@@ -354,7 +354,7 @@ echo $output; //{"info":"Wake up signal was sent."}
             <hr>
             <div class="row">
                 <div class="col-12">
-                    <h3>Sharing is Caring</h3>
+                    <h2 class="h3">Sharing is Caring</h2>
                     <p>
                         You can find the source code of all those scripts here:
                         <br>
@@ -370,7 +370,7 @@ echo $output; //{"info":"Wake up signal was sent."}
             <hr>
             <div class="row">
                 <div class="col-12">
-                    <h3>Questions and Answers:</h3>
+                    <h2 class="h3">Questions and Answers:</h2>
                     <ul>
                         <li><b>How much energy have you saved with this already?</b><br>
                         In 140 days about 60 Euros. The sever was sleeping 89% of the time. Without the script 140 Days * 43 Watts * 24h = 144 kWh, which accounts for 70 Euros (assuming the 49&nbsp;euro&nbsp;cent/kWh from the top).
@@ -385,7 +385,7 @@ echo $output; //{"info":"Wake up signal was sent."}
             <hr>
             <div class="row">
                 <div class="col-12">
-                    <h3>Contact:</h3>
+                    <h2 class="h3">Contact:</h2>
                     <a class="btn btn-sm btn-outline-dark paper-button mastodon-button" href="https://mastodon.social/@m33x" target="_blank" rel="noopener me"><i class="fa-brands fa-mastodon"></i> <span class="network-name">Mastodon</span></a>
                     <a class="btn btn-sm btn-outline-dark paper-button twitter-button" href="https://twitter.com/m33x" target="_blank" rel="noopener me"><i class="fab fa-twitter"></i> <span class="network-name">Twitter</span></a>
                     <a class="btn btn-sm btn-outline-dark paper-button linkedin-button" href="https://www.linkedin.com/in/maximilian-golla/" target="_blank" rel="noopener me"><i class="fab fa-linkedin"></i> <span class="network-name">LinkedIn</span></a>
@@ -395,7 +395,7 @@ echo $output; //{"info":"Wake up signal was sent."}
             <!-- Just some spacing -->
             <br>
             <br>
-        </div><!-- end container -->
+        </main><!-- end container -->
         <script src="../../js/thirdparty/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../../js/thirdparty/jquery.min.js"><\/script>')</script>
         <script src="../../js/thirdparty/bootstrap.bundle.min.js"></script>
