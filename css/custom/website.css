@@ -76,7 +76,7 @@ body > .container {
     margin-top: 0.25rem;
 }
 .cispa-button:hover {
-    color: #fff;
+    color: #000;
     background-color: #018dca;
 }
 .mpi-button:hover {
@@ -92,7 +92,7 @@ body > .container {
     background-color: #10427a;
 }
 .mastodon-button:hover {
-    color: #fff;
+    color: #000;
     background-color: #8c8dff;
 }
 .matrix-button:hover {
@@ -104,7 +104,7 @@ body > .container {
     background-color: #1166c2;
 }
 .signal-button:hover {
-    color: #fff;
+    color: #000;
     background-color: #3a76f0;
 }
 .slack-button:hover {
@@ -116,7 +116,7 @@ body > .container {
     background-color: #000;
 }
 .google-hall-of-fame-button:hover {
-    color: #fff;
+    color: #000;
     background-color: #0c9d58;
 }
 .apple-hall-of-fame-button:hover {
@@ -124,19 +124,19 @@ body > .container {
     background-color: #000;
 }
 .pgp-key-button:hover {
-    color: #fff;
+    color: #000;
     background-color:#0093DD;
 }
 .google-scholar-button:hover {
-    color: #fff;
+    color: #000;
     background-color: #4285F4;
 }
 .dblp-button:hover {
-    color: #fff;
+    color: #000;
     background-color: #deb41d;
 }
 .orcid-button:hover {
-    color: #fff;
+    color: #000;
     background-color: #99bb3d;
 }
 .ieee-xplore-button:hover {
@@ -152,7 +152,7 @@ body > .container {
     background-color: #d02039;
 }
 .research-gate-button:hover {
-    color: #fff;
+    color: #000;
     background-color: #10aea1;
 }
 .semantic-scholar-button:hover {
@@ -168,7 +168,7 @@ body > .container {
     background-color: #b31b1b;
 }
 .dimensions-button:hover {
-    color: #fff;
+    color: #000;
     background-color: #40bbea;
 }
 
