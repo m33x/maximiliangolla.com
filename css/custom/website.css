@@ -59,6 +59,24 @@ body > .container {
     padding: 80px 15px 0;
 }
 
+/* Keep the focused skip link above the fixed navigation. */
+.skip-link {
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 1080;
+    padding: 0.5rem 1rem;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 0.25rem;
+}
+
+.skip-link:focus-visible {
+    outline: 3px solid #0d6efd;
+    outline-offset: 2px;
+}
+
 .list-group-item {
     padding-left: 8px;
 }
